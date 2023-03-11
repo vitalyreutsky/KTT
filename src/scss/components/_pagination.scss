@@ -1,0 +1,44 @@
+.pagination {
+  display: none;
+}
+
+@include tablet {
+  .pagination {
+    display: block;
+    .btn--small:first-child {
+      svg {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  .pagination-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .pagination-item {
+    font-family: var(--font-family-Jost);
+    font-weight: 400;
+    font-size: 3.906vw;
+    line-height: 7.813vw;
+    color: var(--light-color);
+    cursor: pointer;
+
+    &--active {
+      color: var(--red-color);
+    }
+  }
+}
+
+@include mobile {
+  .pagination-list {
+    justify-content: center;
+    gap: 7.843vw;
+  }
+
+  .pagination-item {
+    font-size: 5.867vw;
+    line-height: 16vw;
+  }
+}

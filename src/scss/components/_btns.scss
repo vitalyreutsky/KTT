@@ -1,0 +1,125 @@
+.btn--primary {
+  position: relative;
+  font-size: 0.729vw;
+  line-height: 0.885vw;
+  text-transform: uppercase;
+  padding: 0.885vw 4.125vw 0.885vw 1.125vw;
+  color: var(--light-color);
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid var(--gray-color);
+  transition: all 0.3s ease-out;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3vw;
+    width: 1px;
+    height: 100%;
+    background-color: var(--gray-color);
+    transition: all 0.3s ease-out;
+  }
+  svg {
+    position: absolute;
+    top: 50%;
+    right: 1.2vw;
+    width: 0.625vw;
+    height: 0.625vw;
+    transform: translateY(-50%) rotate(-90deg);
+    transition: all 0.3s ease-out;
+  }
+
+  @include for-desktop {
+    &:hover {
+      border-color: var(--red-color);
+      &::after {
+        top: 50%;
+        height: 50%;
+      }
+    }
+  }
+}
+
+.btn--small {
+  position: relative;
+  width: 3.125vw;
+  height: 3.125vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border: 1px solid var(--gray-color);
+  border-radius: 5px;
+  transition: all 0.3s ease-out;
+  svg {
+    transform: rotate(-90deg);
+  }
+
+  @include for-desktop {
+    &:hover {
+      border-color: var(--red-color);
+    }
+  }
+}
+
+@include tablet {
+  .btn--primary {
+    font-size: 2.353vw;
+    line-height: 2.745vw;
+    padding: 2.5vw 10vw 2.5vw 3.125vw;
+    border-radius: 5px;
+    &::after {
+      right: 6.6vw;
+    }
+    svg {
+      width: 1.699vw;
+      height: 1.699vw;
+      right: 2.2vw;
+    }
+  }
+
+  .btn--small {
+    width: 7.843vw;
+    height: 7.843vw;
+    border-radius: 5px;
+    svg {
+      width: 1.699vw;
+      height: 1.699vw;
+    }
+  }
+}
+
+@include mobile {
+  .btn--primary {
+    width: 100%;
+    font-size: 4.267vw;
+    line-height: 5.6vw;
+    padding: 3.5vw 6.302vw 3.5vw 3.125vw;
+    border-radius: 1.333vw;
+    &::after {
+      right: 13vw;
+    }
+    svg {
+      width: 3.2vw;
+      height: 3.2vw;
+
+      &:first-child {
+        right: 4vw;
+      }
+      &:nth-child(3) {
+        right: 5.5vw;
+      }
+    }
+  }
+
+  .btn--small {
+    width: 13.333vw;
+    height: 13.333vw;
+    border-radius: 1.333vw;
+    svg {
+      width: 3.2vw;
+      height: 3.2vw;
+    }
+  }
+}

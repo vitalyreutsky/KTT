@@ -1,0 +1,26 @@
+//Gill Sans
+@include font-face("GillSans", "../fonts/GillSans-Light", 300, normal);
+@include font-face("GillSans", "../fonts/GillSans-Regular", 400, normal);
+
+//Jost
+@include font-face("Jost", "../fonts/Jost-Regular", 400, normal);
+
+//Inter
+@include font-face("Inter", "../fonts/Inter-LightItalic", 300, normal);
+@include font-face("Inter", "../fonts/Inter-Light", 300, normal);
+@include font-face("Inter", "../fonts/Inter-Regular", 400, normal);
+@include font-face("Inter", "../fonts/Inter-Medium", 500, normal);
+@include font-face("Inter", "../fonts/Inter-Bold", 700, normal);
+@include font-face("Inter", "../fonts/Inter-ExtraBold", 800, normal);
+
+//Europe
+@include font-face("Europe", "../fonts/europe-normal", 400, normal);
+@include font-face("Europe", "../fonts/europe-bold", 700, normal);
+
+//AkzidenzGroteskPro-BoldEx
+@include font-face(
+  "AkzidenzGroteskPro",
+  "../fonts/AkzidenzGroteskPro-BoldEx",
+  800,
+  normal
+);

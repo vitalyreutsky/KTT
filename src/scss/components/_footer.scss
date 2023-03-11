@@ -1,0 +1,255 @@
+.footer-container {
+  border-bottom: 1px solid #3a3a3e;
+}
+
+.footer-container .container {
+  padding: 3.125vw 0vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  display: block;
+  width: 20.833vw;
+  height: auto;
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.footer-nav {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 14.531vw;
+    grid-row-gap: 1.927vw;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-size: 1.042vw;
+    line-height: 1.25vw;
+    transition: all 0.3s ease-out;
+    @include for-desktop {
+      &:hover {
+        color: var(--red-color);
+      }
+    }
+  }
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.146vw;
+  max-width: 21.146vw;
+
+  .btn--primary {
+    display: block;
+    padding: 0.885vw 3.3vw 0.885vw 0.5vw;
+    width: 13.958vw;
+    font-size: 0.938vw;
+    line-height: 1.146vw;
+    svg {
+      width: 0.938vw;
+      height: 0.938vw;
+    }
+    span {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    gap: 0.781vw;
+    svg {
+      width: 2vw;
+      height: 1.406vw;
+      margin-top: 0.4vw;
+    }
+
+    img {
+      display: block;
+      margin-top: 0.4vw;
+      width: auto;
+      height: 0.833vw;
+    }
+
+    span {
+      font-size: 0.938vw;
+      line-height: 1.563vw;
+      font-weight: 300;
+      opacity: 0.4;
+    }
+  }
+}
+
+.footer-copyright {
+  padding: 1.302vw 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.833vw;
+  line-height: 1.042vw;
+  opacity: 0.4;
+}
+
+@include tablet {
+  .footer-container {
+    border-bottom: 1px solid #3a3a3e;
+  }
+
+  .footer-container .container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 11.813vw 0 5vw;
+    gap: 7.813vw;
+  }
+
+  .footer-mobile__wrapper {
+    position: relative;
+    top: -4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+  }
+
+  .footer-logo {
+    width: 44.141vw;
+  }
+
+  .footer-nav {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 5.208vw;
+    }
+
+    &__link {
+      font-size: 3.125vw;
+      line-height: 3.906vw;
+    }
+  }
+
+  .footer-info {
+    gap: 1.146vw;
+    max-width: 53vw;
+
+    .btn--primary {
+      padding: 2.5vw 10vw 2.5vw 3.125vw;
+      width: 44.141vw;
+      font-size: 2.344vw;
+      line-height: 2.865vw;
+      margin-bottom: 3.906vw;
+      svg {
+        width: 2.604vw;
+        height: 2.604vw;
+      }
+    }
+
+    &__item {
+      gap: 1.823vw;
+      svg {
+        flex-shrink: 0;
+        width: 4vw;
+        height: 4vw;
+        margin-top: 0.4vw;
+      }
+
+      img {
+        margin-top: 0.4vw;
+        height: 3vw;
+      }
+
+      span {
+        font-size: 2.344vw;
+        line-height: 3.906vw;
+      }
+    }
+  }
+
+  .footer-copyright {
+    padding: 3.906vw 0;
+    font-size: 2.083vw;
+    line-height: 2.604vw;
+  }
+}
+
+@include mobile {
+  .footer-container .container {
+    justify-content: center;
+    align-items: center;
+    padding: 8vw 0;
+    gap: 7.813vw;
+  }
+
+  .footer-mobile__wrapper {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13vw;
+  }
+
+  .footer-logo {
+    width: 57.867vw;
+  }
+
+  .footer-nav {
+    &__list {
+      align-items: center;
+      gap: 8vw;
+    }
+
+    &__link {
+      font-size: 5.333vw;
+      line-height: 6.4vw;
+    }
+  }
+
+  .footer-info {
+    gap: 6.667vw;
+    max-width: 100%;
+
+    .btn--primary {
+      padding: 2.5vw 10vw 2.5vw 3.125vw;
+      width: 100%;
+      font-size: 4.8vw;
+      line-height: 5.867vw;
+      margin-bottom: 0;
+      svg {
+        width: 4.533vw;
+        height: 4.533vw;
+      }
+    }
+
+    &__item {
+      gap: 2.933vw;
+      svg {
+        width: 7vw;
+        height: 7vw;
+        margin-top: 0.5vw;
+      }
+
+      img {
+        margin-top: 1.3vw;
+        height: 5vw;
+      }
+
+      span {
+        font-size: 4vw;
+        line-height: 8vw;
+      }
+    }
+  }
+
+  .footer-copyright {
+    padding: 5.333vw 0;
+    font-size: 3.733vw;
+    line-height: 5.333vw;
+  }
+}

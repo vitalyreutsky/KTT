@@ -1,0 +1,212 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  outline: none;
+  outline-style: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.page {
+  height: 100%;
+  font-family: var(--font-family-Inter);
+  -webkit-text-size-adjust: 100%;
+  font-weight: 500;
+  background-color: var(--bg-color);
+  color: var(--light-color);
+}
+
+.page__body {
+  height: 100%;
+  position: inherit !important;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.site-container {
+  position: relative;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.is-hidden {
+  display: none !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.input-reset {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 86.458vw;
+  @include tablet {
+    max-width: 92.7vw;
+  }
+
+  @include mobile {
+    max-width: 90vw;
+  }
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.centered {
+  text-align: center;
+}
+
+.dis-scroll {
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  overscroll-behavior: none;
+}
+
+.page--ios .dis-scroll {
+  position: relative;
+}
+
+.main-shadow {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -7vw;
+    transform: translate(0, -50%);
+    width: 101.094vw;
+    height: 100%;
+    background-color: #e4e4e4;
+    mix-blend-mode: difference;
+    opacity: 0.06;
+    filter: blur(75px);
+    z-index: -1;
+  }
+
+  @include tablet {
+    &::after {
+      top: 100%;
+      height: 54.297vw;
+      width: 146.484vw;
+    }
+  }
+}
+
+.pipe {
+  position: absolute;
+  top: -13.7vw;
+  right: 4.4vw;
+  width: 87%;
+  height: 100%;
+  stroke-width: 3vw;
+  z-index: -1;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.pipe-mobile {
+  display: none;
+  @include tablet {
+    display: block;
+    position: absolute;
+    width: 83.5%;
+    height: 100%;
+    top: -34vw;
+    right: 13.8vw;
+    stroke-width: 3vw;
+    z-index: -1;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}

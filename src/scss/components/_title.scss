@@ -1,0 +1,73 @@
+.title-page {
+  position: relative;
+  margin-bottom: 5vw;
+  h2 {
+    font-family: var(--font-family-Europe);
+    font-weight: 400;
+    font-size: 3.906vw;
+    line-height: 4.427vw;
+  }
+  span {
+    position: absolute;
+    left: 1.5vw;
+    bottom: 2.5vw;
+    width: auto;
+    height: 100%;
+    font-family: var(--font-family-Europe);
+    font-weight: 700;
+    font-size: 5.208vw;
+    line-height: 5.417vw;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--light-color);
+    opacity: 0.05;
+  }
+}
+.text-page {
+  margin-bottom: 1.771vw;
+  font-weight: 300;
+  font-size: 1.302vw;
+  line-height: 1.979vw;
+  color: #bababa;
+}
+
+@include tablet {
+  .title-page {
+    margin-bottom: 8.724vw;
+    h2 {
+      font-size: 7.161vw;
+      line-height: 9.115vw;
+    }
+    span {
+      left: 4vw;
+      bottom: 5vw;
+      font-size: 10.026vw;
+      line-height: 11.328vw;
+    }
+  }
+  .text-page {
+    margin-bottom: 0;
+    font-size: 2.865vw;
+    line-height: 4.688vw;
+  }
+}
+
+@include mobile {
+  .title-page {
+    margin-bottom: 11vw;
+    h2 {
+      font-size: 8vw;
+      line-height: 9.333vw;
+    }
+    span {
+      left: 4vw;
+      bottom: 6vw;
+      font-size: 11.2vw;
+      line-height: 11.2vw;
+    }
+  }
+  .text-page {
+    margin-bottom: 0;
+    font-size: 4.8vw;
+    line-height: 7.467vw;
+  }
+}

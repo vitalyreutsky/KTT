@@ -373,7 +373,7 @@ function swiperCardBusiness() {
       initBusiness = true;
       swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Keyboard]);
       let swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".business-swiper", {
-        slidesPerView: 1,
+        slidesPerView: 1.03,
         spaceBetween: 10,
         speed: 1000,
         loop: true,

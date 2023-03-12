@@ -8,7 +8,7 @@ function swiperCardBusiness() {
       initBusiness = true;
       Swiper.use([Navigation, Keyboard]);
       let swiper = new Swiper(".business-swiper", {
-        slidesPerView: 1,
+        slidesPerView: 1.03,
         spaceBetween: 10,
         speed: 1000,
         loop: true,

@@ -75,6 +75,7 @@
   height: 29.323vw;
   border-radius: 50%;
   background-color: var(--bg-color);
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
   overflow: hidden;
 }
 

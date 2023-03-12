@@ -7,7 +7,7 @@
   color: var(--light-color);
   background-color: transparent;
   border-radius: 5px;
-  border: 2px solid var(--gray-color);
+  border: 1px solid var(--gray-color);
   transition: all 0.3s ease-out;
   &::after {
     content: "";
@@ -103,13 +103,7 @@
     svg {
       width: 3.2vw;
       height: 3.2vw;
-
-      &:first-child {
-        right: 4vw;
-      }
-      &:nth-child(3) {
-        right: 5.5vw;
-      }
+      right: 4.5vw;
     }
   }
 

@@ -3,15 +3,17 @@
   width: 62.5vw;
   height: 37.031vw;
   flex-shrink: 0;
-  &:hover {
-    .animation-img--off {
-      transform: scale(1.2);
-    }
+  @include for-desktop {
+    &:hover {
+      .animation-img--off {
+        transform: scale(1.2);
+      }
 
-    .animation-img--on {
-      opacity: 1;
-      visibility: visible;
-      transform: scale(1.2);
+      .animation-img--on {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.2);
+      }
     }
   }
 }
@@ -36,18 +38,4 @@
   visibility: hidden;
   transition: all 1.5s ease-out;
   z-index: 2;
-}
-
-@include tablet {
-  .animation-images {
-    &:hover {
-      .animation-img--off {
-        transform: scale(1.1);
-      }
-
-      .animation-img--on {
-        transform: scale(1.1);
-      }
-    }
-  }
 }

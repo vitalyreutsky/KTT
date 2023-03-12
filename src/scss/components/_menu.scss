@@ -508,6 +508,7 @@
     padding: 2.667vw 4.3vw;
     width: 15.267vw;
     height: auto;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
 
     img {
       width: 5.333vw;
@@ -519,6 +520,7 @@
     order: 2;
     padding: 5vw 4.3vw;
     border: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .burger {
@@ -591,7 +593,7 @@
         svg {
           width: 3.2vw;
           height: 3.2vw;
-          margin-left: 6.3vw;
+          margin-left: 6vw;
         }
       }
 

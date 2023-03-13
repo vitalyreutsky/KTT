@@ -72,19 +72,21 @@
   }
 }
 
-.nav__list > .nav__item:hover .sub-menu {
-  display: block;
-  animation-name: fade;
-  animation-duration: 0.3s;
-}
+@include for-desktop {
+  .nav__list > .nav__item--sub:hover .sub-menu {
+    display: block;
+    animation-name: fade;
+    animation-duration: 0.3s;
+  }
 
-.nav__list > .nav__item:hover svg {
-  transform: rotate(-180deg);
-}
+  .nav__list > .nav__item--sub:hover svg {
+    transform: rotate(-180deg);
+  }
 
-.sub-menu__list > .sub-menu__item:hover .sub-menu__link::after {
-  opacity: 1;
-  visibility: visible;
+  .sub-menu__list > .sub-menu__item:hover .sub-menu__link::after {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .search {

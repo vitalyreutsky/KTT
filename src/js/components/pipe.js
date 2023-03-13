@@ -1,22 +1,25 @@
 function setScrollToPipe(pipe) {
   let pipePath = document.querySelector(pipe);
-  let pipePathLength = pipePath.getTotalLength();
 
-  pipePath.style.strokeDasharray = pipePathLength + " " + pipePathLength;
+  if (pipePath) {
+    let pipePathLength = pipePath.getTotalLength();
 
-  pipePath.style.strokeDashoffset = pipePathLength;
+    pipePath.style.strokeDasharray = pipePathLength + " " + pipePathLength;
 
-  window.addEventListener("scroll", () => {
-    let scrollPercentage =
-      (document.documentElement.scrollTop + document.body.scrollTop) /
-      (document.documentElement.scrollHeight -
-        document.documentElement.clientHeight -
-        200);
+    pipePath.style.strokeDashoffset = pipePathLength;
 
-    let drawLength = pipePathLength * scrollPercentage;
+    window.addEventListener("scroll", () => {
+      let scrollPercentage =
+        (document.documentElement.scrollTop + document.body.scrollTop) /
+        (document.documentElement.scrollHeight -
+          document.documentElement.clientHeight -
+          200);
 
-    pipePath.style.strokeDashoffset = pipePathLength - drawLength;
-  });
+      let drawLength = pipePathLength * scrollPercentage;
+
+      pipePath.style.strokeDashoffset = pipePathLength - drawLength;
+    });
+  }
 }
 
 if (window.innerWidth > 1200) {

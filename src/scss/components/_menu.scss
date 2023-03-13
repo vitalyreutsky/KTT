@@ -132,10 +132,20 @@
     font-size: 1.458vw;
   }
 
+  .nav__item--active.active svg {
+    transform: rotate(-180deg);
+  }
+
   .sub-menu {
-    padding: 1vw;
-    left: 2vw;
+    position: relative;
+    top: 0.5vw;
+    left: 1vw;
+    display: block;
     border: none;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s linear;
 
     .nav__link {
       font-weight: 400;
@@ -406,8 +416,13 @@
     }
 
     .sub-menu {
-      top: 5vw;
-      left: 5vw;
+      .sub-menu__list {
+        gap: 1.5vw;
+      }
+
+      .sub-menu__item {
+        max-width: 40vw;
+      }
 
       .nav__link {
         font-size: 2.604vw;
@@ -628,9 +643,16 @@
     }
 
     .sub-menu {
-      padding: 5.333vw;
-      top: 5vw;
+      top: 1vw;
       left: 5vw;
+
+      .sub-menu__list {
+        gap: 2.5vw;
+      }
+
+      .sub-menu__item {
+        max-width: 70vw;
+      }
 
       .nav__link {
         font-size: 4.267vw;

@@ -6,3 +6,4 @@ import "./components/scrollTo";
 import "./components/leaders-cards";
 import "./components/pipe";
 import "./components/swiper";
+import "./components/menu";

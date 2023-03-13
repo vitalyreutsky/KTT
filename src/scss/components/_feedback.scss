@@ -1,0 +1,136 @@
+.application {
+  margin-bottom: 5.9vw;
+  .application-container {
+    position: relative;
+  }
+
+  .feedback {
+    margin: 0 auto;
+  }
+
+  .feedback-form {
+    max-width: 71.979vw;
+    width: 100%;
+  }
+
+  .feedback-title {
+    margin-bottom: 3vw;
+  }
+
+  .feedback-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10.417vw;
+    grid-row-gap: 1.042vw;
+    margin-bottom: 3vw;
+    max-width: 63vw;
+    transform: translateX(7.5vw);
+  }
+
+  .feedback-item {
+    position: relative;
+    padding-left: 1vw;
+    font-weight: 300;
+    font-size: 1.042vw;
+    line-height: 1.563vw;
+    opacity: 0.7;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 0.5vw;
+      height: 0.5vw;
+      background-color: var(--red-color);
+      border-radius: 50%;
+    }
+  }
+
+  .feedback-anim {
+    position: absolute;
+    top: -2vw;
+    right: 0;
+    width: 18.229vw;
+    height: 22.917vw;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form-fields {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    gap: 1.563vw;
+    width: 35.417vw;
+  }
+
+  .file-area {
+    width: 100%;
+    height: 16.7vw;
+    position: relative;
+
+    input[type="file"] {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    .file-dummy {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      padding: 1.563vw;
+      border: 1px dashed rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      text-align: center;
+      transition: background 0.3s ease-in-out;
+
+      .file-success {
+        display: none;
+      }
+
+      .file-default {
+        pointer-events: none;
+      }
+
+      p {
+        max-width: 16.354vw;
+        margin: 0 auto;
+        font-weight: 300;
+        font-family: var(--font-family-GillSans);
+        font-size: 1.146vw;
+        line-height: 1.458vw;
+        color: #868686;
+      }
+    }
+
+    .file-icon {
+      width: 3.854vw;
+      height: 4.167vw;
+      fill: #3a3a3e;
+    }
+
+    //input[type="file"]:valid + .file-dummy {
+    //  border-color: rgba(0, 255, 0, 0.4);
+    //  background-color: rgba(0, 255, 0, 0.3);
+
+    //  .file-success {
+    //    display: inline-block;
+    //  }
+    //}
+  }
+}

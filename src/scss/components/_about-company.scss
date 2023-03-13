@@ -6,7 +6,7 @@
   &__container {
     display: flex;
     flex-direction: column;
-    gap: 3.7vw;
+    gap: 2vw;
     width: 100%;
   }
 
@@ -56,12 +56,5 @@
     top: 35vw;
     width: 100%;
     height: 12.031vw;
-  }
-
-  &__scroll {
-    position: relative;
-    display: block;
-    bottom: 0;
-    left: 0;
   }
 }

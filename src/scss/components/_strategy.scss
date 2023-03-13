@@ -1,0 +1,26 @@
+.strategy {
+  margin-bottom: 7vw;
+}
+
+.strategy-title {
+  margin-bottom: 2.7vw;
+}
+.strategy-text {
+  display: flex;
+  justify-content: space-between;
+  p {
+    max-width: 41.9vw;
+  }
+}
+.strategy-img {
+  width: 100%;
+  height: 16vw;
+  margin-bottom: 2.083vw;
+  border-radius: 10px;
+  overflow: hidden;
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}

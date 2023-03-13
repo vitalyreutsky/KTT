@@ -27,6 +27,13 @@
   animation: scrollTo 3s ease-out infinite;
 }
 
+.main-scroll {
+  position: relative;
+  display: block;
+  bottom: 0;
+  left: 0;
+}
+
 @keyframes scrollTo {
   0% {
     transform: translateY(-1vw);

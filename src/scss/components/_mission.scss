@@ -1,4 +1,5 @@
 .mission {
+  position: relative;
   padding-top: 3.1vw;
   margin-bottom: 7vw;
 }
@@ -28,4 +29,12 @@
     width: 100%;
     height: 100%;
   }
+}
+
+.mission-anim {
+  position: absolute;
+  top: -7vw;
+  right: 0;
+  width: 41.667vw;
+  height: 25vw;
 }

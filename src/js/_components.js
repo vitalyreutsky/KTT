@@ -7,3 +7,4 @@ import "./components/leaders-cards";
 import "./components/pipe";
 import "./components/swiper";
 import "./components/menu";
+import "./components/tabs";

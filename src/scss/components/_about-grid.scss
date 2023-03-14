@@ -44,6 +44,7 @@
   border-radius: 10px;
   filter: grayscale(100%);
   transition: all 0.7s ease-out;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
   overflow: hidden;
   img {
     display: block;

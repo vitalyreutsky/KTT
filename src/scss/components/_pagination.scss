@@ -1,33 +1,43 @@
 .pagination {
   display: none;
-}
 
-@include tablet {
-  .pagination {
-    display: block;
-    .btn--small:first-child {
-      svg {
-        transform: rotate(90deg);
-      }
-    }
-  }
-  .pagination-list {
+  &-list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 3.125vw;
   }
 
-  .pagination-item {
+  &-item {
     font-family: var(--font-family-Jost);
     font-weight: 400;
-    font-size: 3.906vw;
-    line-height: 7.813vw;
+    font-size: 1.563vw;
+    line-height: 3.125vw;
     color: var(--light-color);
     cursor: pointer;
 
     &--active {
       color: var(--red-color);
     }
+  }
+
+  .btn--small:first-child {
+    svg {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+@include tablet {
+  .pagination {
+    display: block;
+  }
+  .pagination-list {
+    justify-content: space-between;
+  }
+
+  .pagination-item {
+    font-size: 3.906vw;
+    line-height: 7.813vw;
   }
 }
 

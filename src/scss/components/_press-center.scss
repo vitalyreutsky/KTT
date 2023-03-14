@@ -1,0 +1,19 @@
+.press-center {
+  padding-top: 2.688vw;
+  margin-bottom: 5.208vw;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 4.688vw;
+  }
+
+  .title-page {
+    margin: 0;
+  }
+
+  .pagination {
+    display: block;
+    padding-top: 2.604vw;
+  }
+}

@@ -12,7 +12,6 @@
 .work-top {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
 }
 .work-content {
   max-width: 41.667vw;
@@ -45,19 +44,27 @@
   }
 }
 .work-images {
-  top: 1.5vw;
+  top: 5vw;
   right: 3vw;
-  width: 30.156vw;
-  height: 28.958vw;
+  width: 42.656vw;
+  height: 34.375vw;
   transform: matrix(-1, 0, 0, 1, 0, 0);
+  z-index: 0;
+  img {
+    width: 30.156vw;
+    height: 29.323vw;
+    top: 0;
+    left: 0;
+  }
 }
 
 .work-anim {
   position: absolute;
-  top: -3vw;
-  right: -4vw;
-  width: 57vw;
+  top: -7vw;
+  right: 5vw;
+  width: auto;
   height: 40vw;
+  transform: rotate(180deg);
   z-index: -1;
 }
 
@@ -94,9 +101,12 @@
 
 //count
 .count {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 2vw;
+  background-color: var(--bg-color);
+  z-index: 1;
 }
 .count-title {
   font-family: var(--font-family-Europe);
@@ -144,24 +154,55 @@
     width: 46.563vw;
     height: 27.604vw;
     right: -8vw;
-    top: -7vw;
+    top: 3vw;
     transform: matrix(1, 0, 0, 1, 0, 0);
+    img {
+      width: 46.563vw;
+      height: 27.604vw;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .work-anim {
+    position: absolute;
+    top: -5vw;
+    right: 2vw;
+    width: auto;
+    height: 40vw;
+    transform: rotate(0);
   }
 }
 
 .transshipment-oil {
   .work-images {
+    top: 0;
+    right: -10vw;
     transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+
+  .work-anim {
+    top: -5vw;
+    right: 0;
+    transform: rotate(0);
   }
 }
 
 .transshipment-bitumen {
   .work-images {
-    right: -3vw;
-    top: -8vw;
-    width: 36vw;
-    height: 23vw;
+    right: -8vw;
+    top: 3vw;
     transform: matrix(1, 0, 0, 1, 0, 0);
+    img {
+      width: 35.99vw;
+      height: auto;
+    }
+  }
+
+  .work-anim {
+    top: -5vw;
+    right: 0;
+    transform: rotate(180deg);
   }
 }
 
@@ -196,24 +237,264 @@
       width: 100%;
       height: 100%;
       z-index: 1;
-      animation: anim 3s ease-out infinite;
-      animation-direction: alternate;
-    }
-  }
-
-  @keyframes anim {
-    100% {
-      stroke-dasharray: 197 509;
-      stroke-dashoffset: -1058;
     }
   }
 }
 
 .bunkering {
   .work-images {
-    top: -3vw;
+    top: 0;
     right: -5vw;
-    width: 37.969vw;
-    height: 25.521vw;
+    img {
+      width: 37.969vw;
+      height: auto;
+    }
+  }
+
+  .work-anim {
+    top: -5vw;
+    right: 0;
+  }
+}
+
+@include tablet {
+  .work {
+    padding-top: 14vw;
+    margin-bottom: 6.25vw;
+  }
+  .work-container {
+    gap: 0;
+  }
+
+  .work-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 6.51vw;
+    margin-bottom: 21vw;
+  }
+  .work-content {
+    max-width: 100%;
+
+    .btn {
+      width: 100%;
+    }
+  }
+  .work-title {
+    font-size: 4.688vw;
+    line-height: 6.51vw;
+    margin-bottom: 3.906vw;
+  }
+  .work-text {
+    gap: 1.953vw;
+    margin-bottom: 5.859vw;
+    p {
+      font-size: 2.604vw;
+      line-height: 3.906vw;
+    }
+  }
+  .work-images {
+    top: 7vw;
+    right: 0;
+    width: 67.969vw;
+    height: 63vw;
+  }
+
+  .work-anim__horizontal {
+    margin: 9.115vw 0;
+    height: auto;
+    width: 200vw;
+  }
+
+  .work-documents {
+    flex-direction: column;
+    gap: 2.604vw;
+  }
+
+  .work-documents__title {
+    font-size: 4.688vw;
+    line-height: 5.208vw;
+  }
+
+  .work-documents__inner {
+    gap: 2.604vw;
+    flex-direction: column;
+    .btn {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  //count
+  .count {
+    gap: 4.818vw;
+    margin-bottom: 9.115vw;
+  }
+  .count-title {
+    font-size: 4.688vw;
+    line-height: 5.208vw;
+  }
+  .count-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5.3vw;
+  }
+  .count-item {
+    gap: 4.557vw;
+  }
+  .count-num {
+    font-size: 9.115vw;
+    line-height: 3.906vw;
+  }
+
+  .count-text {
+    max-width: 100%;
+    font-size: 2.604vw;
+    line-height: 3.906vw;
+  }
+
+  .work {
+    .title-page {
+      margin-bottom: 7.813vw;
+      h2 {
+        font-size: 5.99vw;
+        line-height: 8.594vw;
+      }
+    }
+  }
+
+  .supply {
+    .work-top {
+      gap: 15vw;
+    }
+
+    .work-anim {
+      top: -14vw;
+      right: -12vw;
+      width: 96.094vw;
+      height: 77.474vw;
+    }
+
+    .work-images {
+      width: 66vw;
+      height: 60vw;
+      img {
+        width: 90%;
+        height: 90%;
+      }
+    }
+  }
+
+  .export {
+    .work-top {
+      gap: 20vw;
+    }
+
+    .work-images {
+      width: 92.448vw;
+      height: 54.688vw;
+      right: -15vw;
+      top: 0;
+      img {
+        width: 95%;
+        height: 95%;
+      }
+    }
+
+    .count {
+      margin: 0;
+    }
+
+    .work-anim {
+      top: -14vw;
+      right: 11vw;
+      width: 96.094vw;
+      height: 77.474vw;
+    }
+  }
+
+  .transshipment-oil {
+    .work-top {
+      gap: 20vw;
+      margin-bottom: 10vw;
+    }
+    .work-images {
+      right: 0;
+      width: 64.453vw;
+      height: 64.974vw;
+      img {
+        width: 95%;
+        height: 95%;
+      }
+    }
+
+    .work-anim {
+      top: -10vw;
+      right: -18vw;
+      width: 96.094vw;
+      height: 77.474vw;
+    }
+  }
+
+  .transshipment-bitumen {
+    .work-top {
+      gap: 20vw;
+      margin-bottom: 10vw;
+    }
+    .work-images {
+      top: 0;
+      right: -22vw;
+      width: 96.224vw;
+      height: 60.547vw;
+      img {
+        width: 85%;
+        height: 85%;
+      }
+    }
+
+    .work-anim {
+      top: -12vw;
+      right: 20vw;
+      width: 96.094vw;
+      height: 77.474vw;
+    }
+  }
+
+  .illustration {
+    .work-images {
+      right: 10vw;
+      width: 16.198vw;
+      height: 16.198vw;
+      .illustration-img {
+        &::after {
+          bottom: -3vw;
+          width: 16.198vw;
+          height: 2.969vw;
+        }
+      }
+    }
+  }
+
+  .bunkering {
+    .work-top {
+      gap: 20vw;
+      margin-bottom: 10vw;
+    }
+
+    .work-images {
+      top: -4vw;
+      right: -10vw;
+      width: 87.37vw;
+      height: 58.724vw;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .work-anim {
+      top: -8vw;
+      right: -12vw;
+      width: 96.094vw;
+      height: 77.474vw;
+    }
   }
 }

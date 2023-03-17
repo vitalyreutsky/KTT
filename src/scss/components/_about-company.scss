@@ -100,7 +100,7 @@
 @include tablet {
   .about-company {
     padding-top: 15.625vw;
-    margin-bottom: 31.901vw;
+    margin-bottom: 0;
 
     .hero-text {
       max-width: 100%;
@@ -155,9 +155,12 @@
     }
 
     &__anim {
-      top: 134vw;
+      position: relative;
+      top: 0;
+      left: -7vw;
       width: 285.286vw;
       height: 30.078vw;
+      margin-top: 10vw;
     }
   }
 }

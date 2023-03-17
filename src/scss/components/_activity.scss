@@ -108,3 +108,52 @@
     }
   }
 }
+
+@include tablet {
+  .activity {
+    margin-bottom: 13.021vw;
+    padding-top: 20vw;
+
+    .activity-container {
+      gap: 5.208vw;
+    }
+
+    .title-page {
+      h1 {
+        font-size: 7.161vw;
+        line-height: 9.115vw;
+      }
+      span {
+        font-size: 10.026vw;
+        line-height: 11.328vw;
+        bottom: 5vw;
+      }
+    }
+  }
+  .activity-tabs {
+    gap: 1.042vw;
+  }
+
+  .activity-list {
+    width: 100%;
+    gap: 2.604vw;
+  }
+  .activity-item {
+    padding: 4.297vw 3.255vw;
+    &__content {
+      gap: 1.042vw;
+      span {
+        font-size: 7.813vw;
+        line-height: 7.813vw;
+      }
+
+      p {
+        font-size: 2.604vw;
+        line-height: 3.385vw;
+      }
+    }
+  }
+  .activity-content {
+    display: none;
+  }
+}

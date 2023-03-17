@@ -1,0 +1,65 @@
+.graph-modal {
+  background: rgba(0, 0, 0, 0.46);
+  backdrop-filter: blur(5px);
+}
+
+.graph-modal__container {
+  background-color: #181818;
+  padding: 3.125vw 4.167vw;
+  width: auto;
+}
+
+.graph-modal__close {
+  top: 1.563vw;
+  right: 1.563vw;
+  background-image: url("../img/close.svg");
+  background-repeat: no-repeat;
+  background-size: 0.781vw 0.781vw;
+  background-position: center;
+  border: 1px solid #3a3a3e;
+  padding: 0.938vw;
+  border-radius: 6px;
+}
+
+.modal-success {
+  width: 43.75vw;
+  height: 35vw;
+
+  &__anim {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  h2 {
+    text-align: left;
+    font-family: var(--font-family-Europe);
+    font-weight: 400;
+    font-size: 2.396vw;
+    line-height: 3.438vw;
+    margin-bottom: 0.521vw;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 1.042vw;
+    line-height: 1.563vw;
+    margin-bottom: 4.896vw;
+    opacity: 0.7;
+  }
+  .btn {
+    text-align: center;
+    width: 100%;
+    background-color: #121212;
+    svg {
+      transform: translateY(-50%) rotate(90deg);
+    }
+  }
+}

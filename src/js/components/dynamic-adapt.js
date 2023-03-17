@@ -12,7 +12,7 @@ DynamicAdapt.prototype.init = function () {
   // массив DOM-элементов
   this.nodes = document.querySelectorAll("[data-da]");
 
-  // наполнение оbjects объктами
+  // наполнение оbjects объектами
   for (let i = 0; i < this.nodes.length; i++) {
     const node = this.nodes[i];
     const data = node.dataset.da.trim();

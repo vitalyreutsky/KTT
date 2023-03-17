@@ -16,6 +16,7 @@
       line-height: 4.427vw;
     }
     span {
+      text-transform: none;
       font-size: 4.3vw;
       line-height: 5.417vw;
     }
@@ -50,6 +51,7 @@
     display: flex;
     align-items: center;
     gap: 1.042vw;
+    pointer-events: none;
     span {
       font-family: var(--font-family-Europe);
       font-weight: 700;
@@ -78,7 +80,6 @@
   height: 100%;
   border-radius: 10px;
   opacity: 0;
-  visibility: hidden;
   transition: all 0.3s ease-out;
   overflow: hidden;
   img {
@@ -91,7 +92,6 @@
 .tabs__panel--active {
   display: block;
   opacity: 1;
-  visibility: visible;
 }
 
 .tabs__nav-btn:focus {

@@ -8,3 +8,6 @@ import "./components/pipe";
 import "./components/swiper";
 import "./components/menu";
 import "./components/tabs";
+import "./components/count";
+import "./components/modal";
+import "./components/search";

@@ -38,3 +38,40 @@
   width: 41.667vw;
   height: 25vw;
 }
+
+@include tablet {
+  .mission {
+    padding-top: 20vw;
+    margin-bottom: 10.417vw;
+
+    .hero-title {
+      span {
+        white-space: nowrap;
+      }
+    }
+
+    .main-scroll {
+      display: block;
+      bottom: 0;
+    }
+  }
+
+  .mission-container {
+    .title-page {
+      margin-bottom: 3.906vw;
+    }
+  }
+
+  .mission-text {
+    max-width: 100%;
+    margin-bottom: 6.51vw;
+  }
+  .mission-img {
+    height: 45.833vw;
+    margin-bottom: 6.51vw;
+  }
+
+  .mission-anim {
+    display: none;
+  }
+}

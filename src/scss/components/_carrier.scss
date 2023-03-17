@@ -58,3 +58,47 @@
     height: 12.031vw;
   }
 }
+
+@include tablet {
+  .carrier {
+    padding-top: 20vw;
+    margin-bottom: 3vw;
+
+    &__container {
+      gap: 2vw;
+    }
+
+    &__inner {
+      flex-direction: column;
+      gap: 6.51vw;
+    }
+
+    &__title {
+      top: 1.5vw;
+      margin-bottom: 3.5vw;
+    }
+
+    &__text {
+      gap: 2.604vw;
+      .text-page {
+        max-width: 100%;
+        font-size: 2.865vw;
+        line-height: 4.688vw;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      height: 70.833vw;
+      margin-bottom: 3vw;
+    }
+
+    &__anim {
+      position: relative;
+      width: 207vw;
+      height: 21vw;
+      top: 0;
+      right: 3vw;
+    }
+  }
+}

@@ -68,6 +68,10 @@
 }
 
 @include tablet {
+  .main-scroll {
+    display: none;
+  }
+
   .scroll-to {
     bottom: -7vw;
     width: 4.427vw;

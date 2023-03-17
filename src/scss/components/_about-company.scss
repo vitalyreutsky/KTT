@@ -37,10 +37,20 @@
     }
   }
 
-  &__img {
+  &__swiper {
+    margin: 0;
     flex-shrink: 0;
+    border-radius: 10px;
+  }
+
+  &__wrapper {
     width: 35.417vw;
     height: 37.656vw;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     overflow: hidden;
     img {
@@ -50,11 +60,104 @@
     }
   }
 
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 1.563vw;
+  }
+
+  &__pagination {
+    display: flex;
+    gap: 1.042vw;
+    justify-content: center;
+    .swiper-pagination-bullet {
+      width: 1.615vw;
+      height: 0.208vw;
+      margin: 0 !important;
+      background: rgba(255, 255, 255, 0.51);
+      opacity: 1;
+      border-radius: 18px;
+      transition: all 0.3s ease-out;
+    }
+
+    .swiper-pagination-bullet-active {
+      width: 3.229vw;
+      background: var(--red-color);
+      opacity: 1;
+    }
+  }
+
   &__anim {
     position: absolute;
     right: -3vw;
     top: 35vw;
     width: 100%;
     height: 12.031vw;
+  }
+}
+
+@include tablet {
+  .about-company {
+    padding-top: 15.625vw;
+    margin-bottom: 31.901vw;
+
+    .hero-text {
+      max-width: 100%;
+    }
+
+    &__container {
+      gap: 15.36px;
+    }
+
+    &__inner {
+      flex-direction: column;
+      gap: 5.208vw;
+    }
+
+    &__content {
+      max-width: 100%;
+    }
+
+    &__title {
+      top: 11.52px;
+      margin-bottom: 26.88px;
+    }
+
+    &__text {
+      gap: 3.906vw;
+    }
+
+    &__wrapper {
+      width: 100%;
+      height: 61.328vw;
+      border-radius: 10px;
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+      bottom: 3.906vw;
+    }
+
+    &__pagination {
+      gap: 2.604vw;
+      .swiper-pagination-bullet {
+        width: 4.036vw;
+        height: 0.521vw;
+        border-radius: 2.344vw;
+      }
+
+      .swiper-pagination-bullet-active {
+        width: 8.073vw;
+      }
+    }
+
+    &__anim {
+      top: 134vw;
+      width: 285.286vw;
+      height: 30.078vw;
+    }
   }
 }

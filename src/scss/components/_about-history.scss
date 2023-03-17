@@ -91,3 +91,48 @@
     }
   }
 }
+
+@include tablet {
+  .about-history {
+    margin-bottom: 9.115vw;
+    &__container {
+      gap: 5.208vw;
+    }
+
+    &__wrapper {
+      gap: 3.906vw;
+    }
+
+    .title-page {
+      max-width: 40.104vw;
+      span {
+        bottom: 8vw;
+      }
+    }
+  }
+
+  .history {
+    gap: 4.557vw;
+    min-height: 26.042vw;
+  }
+  .history-date {
+    top: 7vw;
+    font-size: 3.906vw;
+    line-height: 3.906vw;
+    -webkit-text-stroke: 0.7px var(--light-color);
+    opacity: 0.5;
+  }
+  .history-content {
+    padding: 3.646vw 5.599vw;
+
+    &::before {
+      left: -16vw;
+      width: 14.974vw;
+    }
+  }
+  .history-decor {
+    left: -2.5vw;
+    width: 5.599vw;
+    height: 5.599vw;
+  }
+}

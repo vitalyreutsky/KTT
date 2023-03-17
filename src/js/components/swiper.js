@@ -1,4 +1,4 @@
-import Swiper, { Keyboard, Navigation } from "swiper";
+import Swiper, { Autoplay, Keyboard, Navigation, Pagination } from "swiper";
 
 //!mobile-swiper-business
 let initBusiness = false;
@@ -62,3 +62,27 @@ function swiperCardLeaders() {
 }
 swiperCardLeaders();
 window.addEventListener("resize", swiperCardLeaders);
+
+//!anout company swiper
+Swiper.use([Keyboard, Pagination, Autoplay]);
+const swiper = new Swiper(".about-company__swiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  speed: 1000,
+  loop: true,
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+
+  autoplay: {
+    delay: 2000,
+  },
+
+  pagination: {
+    el: ".about-company__pagination",
+    clickable: true,
+    dynamicBullets: false,
+  },
+});

@@ -17,3 +17,22 @@
     padding-top: 2.604vw;
   }
 }
+
+@include tablet {
+  .press-center {
+    padding-top: 20vw;
+    margin-bottom: 9.115vw;
+
+    &__container {
+      gap: 4.688vw;
+    }
+
+    .news-column:nth-child(n + 2) {
+      display: flex;
+    }
+
+    .pagination {
+      padding-top: 2.604vw;
+    }
+  }
+}

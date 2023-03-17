@@ -5,7 +5,9 @@
   <body class="page__body">
     <div class="site-container">
       @include('partials/header.html') @include('partials/menu.html')
-      <main class="main">@include('partials/news-single.html')</main>
+      <main class="main">
+        @include('partials/news-single.html') @include('partials/news.html')
+      </main>
       @include('partials/footer.html')
     </div>
   </body>

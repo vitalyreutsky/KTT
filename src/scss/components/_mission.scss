@@ -2,6 +2,10 @@
   position: relative;
   padding-top: 3.1vw;
   margin-bottom: 7vw;
+
+  .about-company__anim {
+    display: none;
+  }
 }
 
 .mission-container {
@@ -73,5 +77,41 @@
 
   .mission-anim {
     display: none;
+  }
+}
+
+@include mobile {
+  .mission {
+    padding-top: 25vw;
+    margin-bottom: 10.417vw;
+
+    .main-scroll {
+      display: none;
+    }
+
+    .about-company__anim {
+      display: block;
+      position: relative;
+      top: 0;
+      left: -73vw;
+      width: 586.667vw;
+      height: 50vw;
+      margin-top: 10vw;
+    }
+  }
+
+  .mission-container {
+    .title-page {
+      margin-bottom: 8vw;
+    }
+  }
+
+  .mission-text {
+    margin-bottom: 6.667vw;
+  }
+  .mission-img {
+    height: 93.867vw;
+    margin-bottom: 6.51vw;
+    border-radius: 2.667vw;
   }
 }

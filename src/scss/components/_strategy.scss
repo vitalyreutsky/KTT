@@ -45,6 +45,23 @@
   }
   .strategy-img {
     height: 45.833vw;
-    margin-bottom: 2.083vw;
+  }
+}
+
+@include mobile {
+  .strategy {
+    margin-bottom: 18.667vw;
+  }
+
+  .strategy-title {
+    margin-bottom: 5.333vw;
+  }
+  .strategy-text {
+    gap: 5.333vw;
+    margin-bottom: 8vw;
+  }
+  .strategy-img {
+    height: 93.867vw;
+    border-radius: 2.667vw;
   }
 }

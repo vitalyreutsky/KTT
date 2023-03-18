@@ -157,3 +157,55 @@
     display: none;
   }
 }
+
+@include mobile {
+  .activity {
+    margin-bottom: 18.667vw;
+    padding-top: 25vw;
+
+    .activity-container {
+      gap: 8vw;
+    }
+
+    .title-page {
+      h1 {
+        font-size: 8vw;
+        line-height: 9.333vw;
+      }
+      span {
+        font-size: 11.2vw;
+        line-height: 11.2vw;
+        bottom: 5vw;
+      }
+    }
+  }
+  .activity-tabs {
+    gap: 0;
+  }
+
+  .activity-list {
+    gap: 4vw;
+  }
+  .activity-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3.733vw 4.8vw;
+    gap: 4.267vw;
+    border-radius: 2.667vw;
+    &__content {
+      gap: 2.667vw;
+      span {
+        font-size: 12vw;
+        line-height: 12vw;
+      }
+
+      p {
+        font-size: 4.5vw;
+        line-height: 5.867vw;
+      }
+    }
+    .btn {
+      text-align: center;
+    }
+  }
+}

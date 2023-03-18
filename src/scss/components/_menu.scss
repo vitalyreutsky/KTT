@@ -630,7 +630,7 @@
 
     input {
       padding: 2vw 10vw 2vw 3vw;
-      font-size: 4vw;
+      font-size: 4.267vw;
     }
   }
 
@@ -708,6 +708,7 @@
     }
 
     .form__input {
+      font-size: 4.267vw;
       padding: 3.5vw 2.5vw 3.5vw 17vw;
       border-radius: 1.333vw;
       &::placeholder {

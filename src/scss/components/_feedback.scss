@@ -233,6 +233,10 @@
   .application {
     margin-bottom: 18.667vw;
 
+    .main-shadow::after {
+      display: none;
+    }
+
     .title-page {
       margin-bottom: 6.51vw;
       span {
@@ -283,6 +287,7 @@
     }
 
     .form__input {
+      font-size: 4.267vw;
       padding: 3.5vw 2.5vw 3.5vw 17vw;
       border-radius: 1.333vw;
       &::placeholder {

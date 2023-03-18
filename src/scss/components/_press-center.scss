@@ -36,3 +36,18 @@
     }
   }
 }
+
+@include mobile {
+  .press-center {
+    padding-top: 25vw;
+    margin-bottom: 18.667vw;
+
+    &__container {
+      gap: 4vw;
+    }
+
+    .pagination {
+      padding-top: 8vw;
+    }
+  }
+}

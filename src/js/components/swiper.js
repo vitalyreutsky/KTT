@@ -150,3 +150,35 @@ function swiperCardHistory() {
 }
 swiperCardHistory();
 window.addEventListener("resize", swiperCardHistory);
+
+//!mobile-swiper-single
+let initSingle = false;
+function swiperCardSingle() {
+  if (window.innerWidth <= 600) {
+    if (!initSingle) {
+      initSingle = true;
+      Swiper.use([Navigation, Keyboard]);
+      let swiper = new Swiper(".single-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        speed: 1000,
+        loop: true,
+        centeredSlides: false,
+        navigation: {
+          nextEl: ".single-next",
+          prevEl: ".single-prev",
+        },
+
+        keyboard: {
+          enabled: true,
+          onlyInViewport: true,
+        },
+      });
+    }
+  } else if (initSingle) {
+    swiper.destroy();
+    initSingle = false;
+  }
+}
+swiperCardSingle();
+window.addEventListener("resize", swiperCardSingle);

@@ -223,3 +223,112 @@
     height: 37.24vw;
   }
 }
+
+@include mobile {
+  .news-single {
+    padding-top: 25vw;
+    margin-bottom: 18.667vw;
+  }
+
+  .single-container {
+    gap: 8vw;
+    max-width: 90vw;
+  }
+  .single-top {
+    &__date {
+      gap: 2.667vw;
+      margin-bottom: 5.333vw;
+      span {
+        font-size: 3.733vw;
+        line-height: 6.933vw;
+      }
+
+      svg {
+        width: 4.533vw;
+        height: 4.267vw;
+      }
+    }
+
+    &__title {
+      font-size: 6.933vw;
+      line-height: 10.667vw;
+      margin-bottom: 5.333vw;
+    }
+
+    &__text {
+      font-size: 4.8vw;
+      line-height: 6.933vw;
+      margin-bottom: 8vw;
+    }
+
+    &__img {
+      height: 74.667vw;
+      border-radius: 2.667vw;
+    }
+  }
+  .single-bottom {
+    gap: 4vw;
+    &__title {
+      font-size: 6.933vw;
+      line-height: 10.667vw;
+    }
+
+    &__content {
+      gap: 5.333vw;
+
+      p {
+        font-size: 4.8vw;
+        line-height: 6.933vw;
+      }
+
+      ul {
+        gap: 5.333vw;
+      }
+
+      li {
+        padding-left: 5vw;
+        font-size: 4.8vw;
+        line-height: 6.933vw;
+        &::before {
+          top: 2.3vw;
+          width: 2.133vw;
+          height: 2.133vw;
+        }
+      }
+    }
+  }
+
+  .single-swiper {
+    display: flex;
+    flex-direction: column;
+    gap: 8vw;
+    width: 100%;
+  }
+
+  .single-wrapper {
+    display: flex;
+    gap: 0;
+    width: 100%;
+    height: 138.667vw;
+    overflow: visible;
+  }
+  .single-slide {
+    width: 100%;
+    height: 100%;
+  }
+
+  .single-pagination {
+    display: flex;
+    justify-content: space-between;
+    gap: 4vw;
+    .btn {
+      width: 43vw;
+    }
+
+    .single-prev {
+      svg {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

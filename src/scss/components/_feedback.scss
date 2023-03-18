@@ -232,9 +232,8 @@
 @include mobile {
   .application {
     margin-bottom: 18.667vw;
-
-    .main-shadow::after {
-      display: none;
+    &::after {
+      top: 0;
     }
 
     .title-page {

@@ -106,10 +106,6 @@
       max-width: 100%;
     }
 
-    &__container {
-      gap: 15.36px;
-    }
-
     &__inner {
       flex-direction: column;
       gap: 5.208vw;
@@ -120,8 +116,7 @@
     }
 
     &__title {
-      top: 11.52px;
-      margin-bottom: 26.88px;
+      margin-bottom: 5vw;
     }
 
     &__text {
@@ -160,6 +155,71 @@
       left: -7vw;
       width: 285.286vw;
       height: 30.078vw;
+      margin-top: 10vw;
+    }
+  }
+}
+
+@include mobile {
+  .about-company {
+    padding-top: 25vw;
+    margin-bottom: 0;
+
+    .scroll-to {
+      display: none;
+    }
+
+    .hero-text {
+      max-width: 100%;
+    }
+
+    &__container {
+      gap: 15.36px;
+    }
+
+    &__inner {
+      gap: 6.933vw;
+    }
+
+    &__title {
+      margin-bottom: 8vw;
+    }
+
+    &__text {
+      gap: 5.333vw;
+    }
+
+    &__wrapper {
+      height: 61.328vw;
+      border-radius: 10px;
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+      bottom: 5.333vw;
+    }
+
+    &__pagination {
+      gap: 5.333vw;
+      .swiper-pagination-bullet {
+        width: 8.267vw;
+        height: 1.067vw;
+        border-radius: 4.8vw;
+      }
+
+      .swiper-pagination-bullet-active {
+        width: 16.533vw;
+      }
+    }
+
+    &__anim {
+      position: relative;
+      top: 0;
+      left: -73vw;
+      width: 586.667vw;
+      height: 50vw;
       margin-top: 10vw;
     }
   }

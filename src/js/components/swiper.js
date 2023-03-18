@@ -63,7 +63,7 @@ function swiperCardLeaders() {
 swiperCardLeaders();
 window.addEventListener("resize", swiperCardLeaders);
 
-//!anout company swiper
+//!about company swiper
 Swiper.use([Keyboard, Pagination, Autoplay]);
 const swiper = new Swiper(".about-company__swiper", {
   slidesPerView: 1,
@@ -86,3 +86,67 @@ const swiper = new Swiper(".about-company__swiper", {
     dynamicBullets: false,
   },
 });
+
+//!mobile-swiper-grid
+let initGrid = false;
+function swiperCardGrid() {
+  if (window.innerWidth <= 600) {
+    if (!initGrid) {
+      initGrid = true;
+      Swiper.use([Navigation, Keyboard]);
+      let swiper = new Swiper(".about-grid__images", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        speed: 1000,
+        loop: true,
+        centeredSlides: false,
+        navigation: {
+          nextEl: ".grid-next",
+          prevEl: ".grid-prev",
+        },
+
+        keyboard: {
+          enabled: true,
+          onlyInViewport: true,
+        },
+      });
+    }
+  } else if (initGrid) {
+    swiper.destroy();
+    initGrid = false;
+  }
+}
+swiperCardGrid();
+window.addEventListener("resize", swiperCardGrid);
+
+//!mobile-swiper-history
+let initHistory = false;
+function swiperCardHistory() {
+  if (window.innerWidth <= 600) {
+    if (!initHistory) {
+      initHistory = true;
+      Swiper.use([Navigation, Keyboard]);
+      let swiper = new Swiper(".about-history__items", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        speed: 1000,
+        loop: true,
+        centeredSlides: false,
+        navigation: {
+          nextEl: ".history-next",
+          prevEl: ".history-prev",
+        },
+
+        keyboard: {
+          enabled: true,
+          onlyInViewport: true,
+        },
+      });
+    }
+  } else if (initHistory) {
+    swiper.destroy();
+    initHistory = false;
+  }
+}
+swiperCardHistory();
+window.addEventListener("resize", swiperCardHistory);

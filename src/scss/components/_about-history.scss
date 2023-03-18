@@ -136,3 +136,74 @@
     height: 5.599vw;
   }
 }
+
+@include mobile {
+  .about-history {
+    margin-bottom: 16vw;
+    &__container {
+      gap: 8vw;
+    }
+
+    &__items {
+      display: flex;
+      flex-direction: column;
+      gap: 8vw;
+      width: 100%;
+    }
+
+    &__wrapper {
+      flex-direction: row;
+      gap: 0;
+    }
+
+    .title-page {
+      max-width: 40.104vw;
+      span {
+        bottom: 8vw;
+      }
+    }
+  }
+
+  .history {
+    flex-direction: column;
+    gap: 6.4vw;
+    min-height: auto;
+  }
+  .history-date {
+    position: static;
+    font-size: 8vw;
+    line-height: 8vw;
+  }
+  .history-content {
+    display: flex;
+    align-items: center;
+    min-height: 53.333vw;
+    padding: 8vw 5.333vw;
+    border-radius: 2.667vw;
+
+    &::before {
+      display: none;
+    }
+  }
+  .history-decor {
+    top: 1vw;
+    left: -3vw;
+    width: 11.467vw;
+    height: 11.467vw;
+  }
+
+  .history-pagination {
+    display: flex;
+    justify-content: space-between;
+    gap: 4vw;
+    .btn {
+      width: 43vw;
+    }
+
+    .history-prev {
+      svg {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

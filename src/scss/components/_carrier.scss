@@ -102,3 +102,47 @@
     }
   }
 }
+
+@include mobile {
+  .carrier {
+    padding-top: 25vw;
+    margin-bottom: 3vw;
+    .scroll-to {
+      display: none;
+    }
+
+    &__container {
+      gap: 0;
+    }
+
+    &__inner {
+      flex-direction: column;
+      gap: 6.51vw;
+    }
+
+    &__title {
+      top: 0;
+      margin-bottom: 8vw;
+    }
+
+    &__text {
+      gap: 5.333vw;
+      .text-page {
+        font-size: 4.8vw;
+        line-height: 6.933vw;
+      }
+    }
+
+    &__img {
+      height: 70.833vw;
+      margin-bottom: 5.333vw;
+    }
+
+    &__anim {
+      left: -73vw;
+      width: 586.667vw;
+      height: 50vw;
+      margin-top: 10vw;
+    }
+  }
+}

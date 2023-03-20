@@ -62,7 +62,7 @@
   position: absolute;
   top: -7vw;
   right: 5vw;
-  width: auto;
+  width: 100%;
   height: 40vw;
   transform: rotate(180deg);
   z-index: -1;
@@ -168,7 +168,7 @@
     position: absolute;
     top: -5vw;
     right: 2vw;
-    width: auto;
+    width: 100%;
     height: 40vw;
     transform: rotate(0);
   }
@@ -183,7 +183,7 @@
 
   .work-anim {
     top: -5vw;
-    right: 0;
+    right: 10vw;
     transform: rotate(0);
   }
 }
@@ -201,7 +201,7 @@
 
   .work-anim {
     top: -10vw;
-    right: 0;
+    right: 7vw;
     transform: rotate(0);
   }
 }
@@ -244,7 +244,7 @@
     position: absolute;
     top: -10vw;
     right: -15vw;
-    width: auto;
+    width: 100%;
     height: 40vw;
   }
 }

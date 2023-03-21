@@ -12,8 +12,7 @@ function setScrollToPipe(pipe) {
       let scrollPercentage =
         (document.documentElement.scrollTop + document.body.scrollTop) /
         (document.documentElement.scrollHeight -
-          document.documentElement.clientHeight -
-          200);
+          document.documentElement.clientHeight);
 
       let drawLength = pipePathLength * scrollPercentage;
 

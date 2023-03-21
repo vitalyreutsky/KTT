@@ -113,7 +113,7 @@ p {
   margin: 0 auto;
   max-width: 86.458vw;
   @include tablet {
-    max-width: 92.7vw;
+    max-width: 90vw;
   }
 
   @include mobile {
@@ -170,10 +170,11 @@ p {
 }
 
 .pipe {
+  display: none;
   position: absolute;
-  top: -14vw;
-  right: 4.4vw;
-  width: 87%;
+  top: 35vw;
+  right: 13.7vw;
+  width: 76%;
   height: 100%;
   stroke-width: 3vw;
   z-index: -1;

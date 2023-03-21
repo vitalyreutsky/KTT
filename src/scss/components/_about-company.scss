@@ -1,12 +1,12 @@
 .about-company {
   position: relative;
   padding-top: 2.688vw;
-  margin-bottom: 8.3vw;
+  margin-bottom: 10.3vw;
 
   &__container {
     display: flex;
     flex-direction: column;
-    gap: 2vw;
+    gap: 2.6vw;
     width: 100%;
   }
 
@@ -45,7 +45,7 @@
 
   &__wrapper {
     width: 35.417vw;
-    height: 37.656vw;
+    height: 37vw;
   }
 
   &__img {
@@ -99,7 +99,7 @@
 
 @include tablet {
   .about-company {
-    padding-top: 15.625vw;
+    padding-top: 17.7vw;
     margin-bottom: 0;
 
     .hero-text {
@@ -108,7 +108,7 @@
 
     &__inner {
       flex-direction: column;
-      gap: 5.208vw;
+      gap: 9.208vw;
     }
 
     &__content {
@@ -116,16 +116,16 @@
     }
 
     &__title {
-      margin-bottom: 5vw;
+      margin-bottom: 6vw;
     }
 
     &__text {
-      gap: 3.906vw;
+      gap: 2.906vw;
     }
 
     &__wrapper {
       width: 100%;
-      height: 61.328vw;
+      height: 59.3vw;
       border-radius: 10px;
     }
 
@@ -152,17 +152,18 @@
     &__anim {
       position: relative;
       top: 0;
-      left: -7vw;
+      left: -32vw;
       width: 285.286vw;
-      height: 30.078vw;
-      margin-top: 10vw;
+      height: 26.078vw;
+      margin-top: 0;
+      margin-bottom: 0;
     }
   }
 }
 
 @include mobile {
   .about-company {
-    padding-top: 25vw;
+    padding-top: 28vw;
     margin-bottom: 0;
 
     .scroll-to {
@@ -173,16 +174,12 @@
       max-width: 100%;
     }
 
-    &__container {
-      gap: 15.36px;
-    }
-
     &__inner {
       gap: 6.933vw;
     }
 
     &__title {
-      margin-bottom: 8vw;
+      margin-bottom: 10vw;
     }
 
     &__text {
@@ -190,7 +187,7 @@
     }
 
     &__wrapper {
-      height: 61.328vw;
+      height: 59.328vw;
       border-radius: 10px;
     }
 
@@ -217,9 +214,9 @@
     &__anim {
       position: relative;
       top: 0;
-      left: -73vw;
+      left: -175vw;
       width: 586.667vw;
-      height: 50vw;
+      height: 38vw;
       margin-top: 10vw;
     }
   }

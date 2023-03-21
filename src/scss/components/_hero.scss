@@ -1,12 +1,12 @@
 .hero {
   position: relative;
   height: calc(100vh - var(--header-height));
-  margin-bottom: 5vw;
+  margin-bottom: 8.8vw;
   &__container {
     height: 100%;
     display: flex;
     gap: 20vw;
-    padding-top: 13vh;
+    padding-top: 5.4vw;
   }
 }
 
@@ -15,8 +15,8 @@
   top: -5vw;
   left: 0;
   width: 100%;
-  height: 14.583vw;
-  z-index: -1;
+  height: 14vw;
+  z-index: 1;
 }
 
 .hero-vertical__anim {
@@ -37,7 +37,7 @@
 }
 .hero-title {
   position: relative;
-  margin-bottom: 2.8vw;
+  margin-bottom: 2.2vw;
   h1 {
     font-family: var(--font-family-Europe);
     font-weight: 400;
@@ -67,8 +67,8 @@
 
 .hero-img {
   position: relative;
-  top: -1vw;
-  right: 1vw;
+  top: -0.6vw;
+  right: 1.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,6 +78,7 @@
   background-color: var(--bg-color);
   -webkit-mask-image: -webkit-radial-gradient(white, black);
   overflow: hidden;
+  z-index: 1;
 }
 
 .hero-sub {
@@ -166,7 +167,7 @@
     &__container {
       flex-direction: column;
       gap: 0;
-      padding-top: 30vh;
+      padding-top: 27vw;
     }
 
     .btn {
@@ -176,10 +177,10 @@
 
   .hero-img {
     margin-left: auto;
-    top: -4vw;
-    right: 0;
-    width: 46.875vw;
-    height: 46.875vw;
+    top: -4.5vw;
+    right: -3vw;
+    width: 48vw;
+    height: 48vw;
   }
 
   .hero-anim {
@@ -194,7 +195,7 @@
     max-width: 100%;
   }
   .hero-title {
-    margin-bottom: 3.906vw;
+    margin-bottom: 4.9vw;
     h1 {
       font-size: 9.766vw;
       line-height: 11.719vw;
@@ -260,17 +261,18 @@
 @include mobile {
   .hero {
     min-height: 100vh;
-    margin-bottom: 24vw;
+    margin-bottom: 25vw;
     &__container {
-      padding-top: 15vh;
+      padding-top: 30vw;
     }
   }
 
   .hero-img {
-    margin: 0 auto 8vw;
+    margin: 0 auto 7.3vw;
     top: 0;
-    width: 76.8vw;
-    height: 76.8vw;
+    right: 0;
+    width: 75vw;
+    height: 75vw;
   }
 
   .hero-title {
@@ -288,7 +290,7 @@
     max-width: 100%;
     margin-bottom: 13.333vw;
     font-size: 4.8vw;
-    line-height: 6.933vw;
+    line-height: 6.5vw;
   }
 
   .hero-load--1 {

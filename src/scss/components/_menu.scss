@@ -30,7 +30,7 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 0 0.9vw;
+  padding: 0 0.3vw;
   margin: 0 auto;
   border-top: 1px solid var(--gray-color);
   border-bottom: 1px solid var(--gray-color);
@@ -93,10 +93,10 @@
   position: fixed;
   left: 0;
   top: 0;
-  width: calc(100% - 3.6%);
+  width: calc(100% - 2.6%);
   height: 100%;
   background-color: var(--bg-color);
-  transform: translateX(-103.6%);
+  transform: translateX(-102.6%);
   transition: transform 0.5s ease-out;
   z-index: 5;
   overflow: auto;
@@ -247,7 +247,7 @@
 }
 
 .menu--active {
-  transform: translateX(3.6%);
+  transform: translateX(2.6%);
 }
 .menu-burger--active {
   background-color: var(--red-color);
@@ -265,7 +265,7 @@
     margin: 0 auto;
     margin-left: 35vw;
     order: 1;
-    padding: 1.302vw 0vw;
+    padding: 0;
     width: 7vw;
     height: auto;
 
@@ -279,7 +279,7 @@
     order: 0;
     width: auto;
     height: 100%;
-    padding: 3vw 3vw;
+    padding: 2.5vw 3.7vw;
     margin: 0;
     border-top: none;
     border-bottom: none;
@@ -301,7 +301,7 @@
 
   .social {
     order: 2;
-    padding: 3vw 3vw;
+    padding: 2.5vw 3.7vw;
     border-left: 1px solid var(--gray-color);
     &__list {
       flex-direction: row;

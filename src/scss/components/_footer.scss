@@ -10,7 +10,7 @@
 }
 
 .footer-container .container {
-  padding: 3.125vw 0vw;
+  padding: 3.5vw 0vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -52,8 +52,9 @@
 .footer-info {
   display: flex;
   flex-direction: column;
-  gap: 1.146vw;
+  gap: 1vw;
   max-width: 21.146vw;
+  transform: translateY(1.2vw);
 
   .btn--primary {
     display: block;
@@ -61,9 +62,11 @@
     width: 13.958vw;
     font-size: 0.938vw;
     line-height: 1.146vw;
+
     svg {
       width: 0.938vw;
       height: 0.938vw;
+      transform: translateY(-50%) rotate(-360deg);
     }
     span {
       display: block;
@@ -73,7 +76,7 @@
 
   &__item {
     display: flex;
-    gap: 0.781vw;
+    gap: 0.5vw;
     svg {
       width: 2vw;
       height: 1.406vw;
@@ -88,7 +91,7 @@
     }
 
     span {
-      font-size: 0.938vw;
+      font-size: 0.9vw;
       line-height: 1.563vw;
       font-weight: 300;
       opacity: 0.4;
@@ -113,7 +116,7 @@
   .footer-container .container {
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 11.813vw 0 5vw;
+    padding: 13vw 0 5vw;
     gap: 7.813vw;
   }
 
@@ -122,11 +125,11 @@
     top: -4vw;
     display: flex;
     flex-direction: column;
-    gap: 3vw;
+    gap: 3.5vw;
   }
 
   .footer-logo {
-    width: 44.141vw;
+    width: 43vw;
   }
 
   .footer-nav {
@@ -145,10 +148,11 @@
   .footer-info {
     gap: 1.146vw;
     max-width: 53vw;
+    transform: translateY(-1vw);
 
     .btn--primary {
       padding: 2.5vw 10vw 2.5vw 3.125vw;
-      width: 44.141vw;
+      width: 43vw;
       font-size: 2.344vw;
       line-height: 2.865vw;
       margin-bottom: 3.906vw;
@@ -162,14 +166,14 @@
       gap: 1.823vw;
       svg {
         flex-shrink: 0;
-        width: 4vw;
-        height: 4vw;
+        width: 3vw;
+        height: 3vw;
         margin-top: 0.4vw;
       }
 
       img {
         margin-top: 0.4vw;
-        height: 3vw;
+        height: 2.5vw;
       }
 
       span {
@@ -190,7 +194,7 @@
   .footer-container .container {
     justify-content: center;
     align-items: center;
-    padding: 8vw 0;
+    padding: 5vw 0;
     gap: 7.813vw;
   }
 
@@ -199,7 +203,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 13vw;
+    gap: 11.9vw;
   }
 
   .footer-logo {
@@ -209,7 +213,7 @@
   .footer-nav {
     &__list {
       align-items: center;
-      gap: 8vw;
+      gap: 7.3vw;
     }
 
     &__link {
@@ -219,7 +223,7 @@
   }
 
   .footer-info {
-    gap: 6.667vw;
+    gap: 6.5vw;
     max-width: 100%;
 
     .btn--primary {
@@ -235,21 +239,22 @@
     }
 
     &__item {
-      gap: 2.933vw;
+      gap: 1vw;
       svg {
-        width: 7vw;
-        height: 7vw;
+        width: 5vw;
+        height: 5vw;
         margin-top: 0.5vw;
       }
 
       img {
         margin-top: 1.3vw;
-        height: 5vw;
+        height: 4vw;
       }
 
       span {
+        max-width: 81vw;
         font-size: 4vw;
-        line-height: 8vw;
+        line-height: 6vw;
       }
     }
   }

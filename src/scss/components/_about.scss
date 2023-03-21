@@ -1,6 +1,6 @@
 .about {
   position: relative;
-  margin-bottom: 5vw;
+  margin-bottom: 13.5vw;
 }
 .about-container {
   display: flex;
@@ -13,8 +13,12 @@
   flex-shrink: 0;
 }
 
+.about-text {
+  margin-bottom: 1.7vw;
+}
+
 .about-images {
-  right: -9vw;
+  right: -8vw;
 }
 
 .about-horizontal__anim {
@@ -27,26 +31,30 @@
 
 @include tablet {
   .about {
-    margin-bottom: 44.271vw;
+    margin-bottom: 52vw;
   }
   .about-container {
     flex-direction: column;
     align-items: flex-start;
-    padding-left: calc((100% - 92.7vw) / 2);
+    padding-left: calc((100% - 90vw) / 2);
   }
   .about-content {
     max-width: 63.021vw;
     flex-shrink: 0;
   }
 
+  .about-title {
+    margin-bottom: 7vw;
+  }
+
   .about-text {
-    margin-bottom: 17vw;
+    margin-bottom: 18.7vw;
   }
 
   .about-images {
     position: absolute;
-    right: -34vw;
-    top: 63%;
+    right: -37vw;
+    top: 53%;
     width: 93.88vw;
     height: 55.599vw;
     img {
@@ -62,7 +70,7 @@
 
 @include mobile {
   .about {
-    margin-bottom: 26.667vw;
+    margin-bottom: 31vw;
   }
   .about-container {
     padding-left: 0;
@@ -73,8 +81,13 @@
     max-width: 100%;
   }
 
+  .about-title {
+    margin-bottom: 14vw;
+  }
+
   .about-text {
     margin-bottom: 10.667vw;
+    line-height: 7.15vw;
   }
 
   .about-images {
@@ -82,7 +95,7 @@
     right: -5vw;
     width: 144vw;
     height: 85.333vw;
-    margin-bottom: 5.333vw;
+    margin-bottom: 0;
   }
 
   .about-horizontal__anim {

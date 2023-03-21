@@ -1,5 +1,5 @@
 .strategy {
-  margin-bottom: 7vw;
+  margin-bottom: 9.5vw;
 }
 
 .strategy-title {
@@ -8,13 +8,15 @@
 .strategy-text {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 3.1vw;
   p {
     max-width: 41.9vw;
+    margin: 0;
   }
 }
 .strategy-img {
   width: 100%;
-  height: 16vw;
+  height: 18vw;
   margin-bottom: 2.083vw;
   border-radius: 10px;
   overflow: hidden;

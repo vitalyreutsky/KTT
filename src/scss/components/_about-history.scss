@@ -23,7 +23,7 @@
 }
 .history-date {
   position: relative;
-  top: 1.3vw;
+  top: 1.8vw;
   font-family: var(--font-family-Europe);
   font-weight: 700;
   font-size: 1.823vw;
@@ -100,7 +100,7 @@
     }
 
     &__wrapper {
-      gap: 3.906vw;
+      gap: 2.906vw;
     }
 
     .title-page {
@@ -123,7 +123,7 @@
     opacity: 0.5;
   }
   .history-content {
-    padding: 3.646vw 5.599vw;
+    padding: 3.646vw 4.599vw;
 
     &::before {
       left: -16vw;
@@ -131,7 +131,7 @@
     }
   }
   .history-decor {
-    left: -2.5vw;
+    left: -3vw;
     width: 5.599vw;
     height: 5.599vw;
   }
@@ -139,15 +139,15 @@
 
 @include mobile {
   .about-history {
-    margin-bottom: 16vw;
+    margin-bottom: 13vw;
     &__container {
-      gap: 8vw;
+      gap: 6vw;
     }
 
     &__items {
       display: flex;
       flex-direction: column;
-      gap: 8vw;
+      gap: 3vw;
       width: 100%;
     }
 
@@ -170,14 +170,15 @@
     min-height: auto;
   }
   .history-date {
-    position: static;
+    position: relative;
+    top: 0.3vw;
     font-size: 8vw;
     line-height: 8vw;
   }
   .history-content {
     display: flex;
     align-items: center;
-    min-height: 53.333vw;
+    min-height: 33.333vw;
     padding: 8vw 5.333vw;
     border-radius: 2.667vw;
 

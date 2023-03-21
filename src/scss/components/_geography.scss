@@ -1,34 +1,35 @@
 .geography-container {
   display: flex;
   align-items: center;
+  margin-bottom: 2.5vw;
 }
 
 .geography-title {
-  margin-left: 15vw;
+  margin-left: 15.9vw;
   margin-bottom: 0;
 }
 .geography-images {
+  top: -3vw;
   left: -1vw;
   width: 40vw;
   height: 29.688vw;
-  @include for-desktop {
-    &:hover {
-      .geography-img--off {
-        transform: translateX(2vw) scale(1.2);
-      }
+  &:hover {
+    .geography-img--off {
+      transform: translateX(2vw) scale(1.2);
+    }
 
-      .geography-img--on {
-        transform: translateX(2vw) scale(1.2);
-      }
+    .geography-img--on {
+      transform: translateX(2vw) scale(1.2);
     }
   }
 }
 .geography-map {
   position: relative;
-  right: 5vw;
+  top: -1vw;
+  right: 6.5vw;
   flex-shrink: 0;
-  width: 52vw;
-  height: 48.5vw;
+  width: 50vw;
+  height: 45vw;
   img {
     display: block;
     width: 100%;
@@ -43,13 +44,13 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 1.3vw;
-    height: 1.3vw;
+    width: 1vw;
+    height: 1vw;
     border-radius: 50%;
     div {
       position: relative;
-      width: 1vw;
-      height: 1vw;
+      width: 0.8vw;
+      height: 0.8vw;
       background-color: var(--red-color);
       border-radius: 50%;
       z-index: 3;
@@ -96,16 +97,12 @@
 }
 
 .geography-marker:nth-child(1) {
-  top: 12.7vw;
-  left: 12vw;
-  &::after {
-    animation-duration: 3.5s;
-  }
+  display: none;
 }
 
 .geography-marker:nth-child(2) {
-  top: 13.5vw;
-  left: 16vw;
+  top: 12vw;
+  left: 15.5vw;
 }
 
 .geography-marker:nth-child(3) {
@@ -114,36 +111,25 @@
 }
 
 .geography-marker:nth-child(4) {
-  top: 20.7vw;
-  left: 15.3vw;
-
-  &::after {
-    animation-duration: 3.5s;
-  }
+  display: none;
 }
 
 .geography-marker:nth-child(5) {
-  top: 24.5vw;
-  left: 13vw;
+  display: none;
 }
 
 .geography-marker:nth-child(6) {
-  top: 21vw;
-  left: 10vw;
-
-  &::after {
-    animation-duration: 3.5s;
-  }
+  display: none;
 }
 
 .geography-marker:nth-child(7) {
-  top: 28.5vw;
-  left: 15vw;
+  top: 26.5vw;
+  left: 14vw;
 }
 
 .geography-marker:nth-child(8) {
-  top: 32.5vw;
-  left: 15.3vw;
+  top: 30.5vw;
+  left: 15vw;
 
   &::after {
     animation-duration: 3.5s;
@@ -151,8 +137,8 @@
 }
 
 .geography-marker:nth-child(9) {
-  top: 8vw;
-  left: 26vw;
+  top: 7vw;
+  left: 24.5vw;
 
   &::after {
     animation-duration: 5s;
@@ -160,8 +146,8 @@
 }
 
 .geography-marker:nth-child(10) {
-  top: 10.5vw;
-  left: 23.5vw;
+  top: 9.5vw;
+  left: 22.5vw;
 
   &::after {
     animation-duration: 5s;
@@ -174,21 +160,16 @@
 }
 
 .geography-marker:nth-child(12) {
-  top: 19vw;
-  left: 13.5vw;
-
-  &::after {
-    animation-duration: 4.5s;
-  }
+  display: none;
 }
 
 .geography-marker:nth-child(13) {
-  top: 22vw;
-  left: 17.5vw;
+  top: 20.5vw;
+  left: 17vw;
 }
 
 .geography-marker:nth-child(14) {
-  top: 22vw;
+  top: 20.5vw;
   left: 21vw;
 }
 
@@ -202,8 +183,8 @@
 }
 
 .geography-marker:nth-child(16) {
-  top: 13vw;
-  left: 31.5vw;
+  top: 12vw;
+  left: 30vw;
 
   &::after {
     animation-duration: 4.5s;
@@ -211,8 +192,8 @@
 }
 
 .geography-marker:nth-child(17) {
-  top: 10.5vw;
-  left: 33.5vw;
+  top: 9.5vw;
+  left: 32vw;
 }
 
 .geography-marker:nth-child(18) {
@@ -225,7 +206,7 @@
 }
 
 .geography-marker:nth-child(19) {
-  top: 14.5vw;
+  top: 13.5vw;
   left: 37.5vw;
 
   &::after {
@@ -234,22 +215,21 @@
 }
 
 .geography-marker:nth-child(20) {
-  top: 13.5vw;
-  left: 48vw;
+  top: 12vw;
+  left: 46vw;
 }
 
 .geography-marker:nth-child(21) {
-  top: 16vw;
-  left: 50vw;
-
+  top: 15vw;
+  left: 49vw;
   &::after {
     animation-duration: 4.5s;
   }
 }
 
 .geography-marker:nth-child(22) {
-  top: 18.5vw;
-  left: 38.5vw;
+  top: 17vw;
+  left: 37vw;
 
   &::after {
     animation-duration: 4.5s;
@@ -257,8 +237,8 @@
 }
 
 .geography-marker:nth-child(23) {
-  top: 22vw;
-  left: 40.5vw;
+  top: 21vw;
+  left: 39vw;
 
   &::after {
     animation-duration: 4.5s;
@@ -266,13 +246,13 @@
 }
 
 .geography-marker:nth-child(24) {
-  top: 21.5vw;
-  left: 46vw;
+  top: 19.5vw;
+  left: 45vw;
 }
 
 .geography-marker:nth-child(25) {
-  top: 30vw;
-  left: 31vw;
+  top: 29vw;
+  left: 30.3vw;
 
   &::after {
     animation-duration: 4.5s;
@@ -280,8 +260,8 @@
 }
 
 .geography-marker:nth-child(26) {
-  top: 33.5vw;
-  left: 35vw;
+  top: 31vw;
+  left: 34vw;
 }
 
 @keyframes marker {
@@ -320,26 +300,27 @@
 
 @include tablet {
   .geography {
-    margin-bottom: 45vw;
+    margin-bottom: 36vw;
   }
   .geography-container {
     position: relative;
-    padding-left: calc((100% - 92.7vw) / 2);
+    padding-left: calc((100% - 90vw) / 2);
     flex-direction: column;
     align-items: flex-start;
   }
 
   .geography-title {
     margin-left: 0;
-    margin-bottom: 10vw;
+    margin-bottom: 1.5vw;
     h2 {
       max-width: 46.354vw;
     }
   }
   .geography-images {
     position: absolute;
-    left: -15vw;
-    bottom: -35vw;
+    left: -19vw;
+    top: 60%;
+    bottom: 0;
     width: 110.677vw;
     height: 78.125vw;
     &:hover {
@@ -354,7 +335,7 @@
   }
   .geography-map {
     position: relative;
-    right: 0;
+    right: 1.9vw;
     width: 100%;
     height: 89.974vw;
   }
@@ -502,7 +483,10 @@
   }
 }
 
-@include tablet {
+@include mobile {
+  .geography {
+    margin-bottom: 59vw;
+  }
   .geography-title {
     margin: 0;
   }
@@ -511,17 +495,98 @@
     padding-left: calc((100% - 90vw) / 2);
   }
 
+  .geography-images {
+    top: 73%;
+  }
+
   .geography-map {
     position: relative;
-    right: 8vw;
+    right: 6vw;
+    top: 0vw;
+    height: 97.974vw;
+  }
+
+  .geography-marker:nth-child(2) {
+    top: 28vw;
+    left: 27vw;
+  }
+
+  .geography-marker:nth-child(3) {
+    top: 34vw;
+    left: 34vw;
+  }
+
+  .geography-marker:nth-child(7) {
+    top: 50vw;
+    left: 21vw;
+  }
+
+  .geography-marker:nth-child(8) {
+    top: 45vw;
+    left: 32vw;
+  }
+
+  .geography-marker:nth-child(9) {
+    top: 44.5vw;
+    left: 39vw;
+  }
+
+  .geography-marker:nth-child(10) {
+    top: 58vw;
+    left: 25vw;
+  }
+
+  .geography-marker:nth-child(11) {
+    top: 65.5vw;
+    left: 26vw;
+  }
+
+  .geography-marker:nth-child(16) {
+    top: 62vw;
+    left: 57vw;
+  }
+
+  .geography-marker:nth-child(17) {
+    top: 43vw;
+    left: 75vw;
+  }
+
+  .geography-marker:nth-child(18) {
+    top: 67vw;
+    left: 65vw;
+  }
+
+  .geography-marker:nth-child(21) {
+    top: 26vw;
+    left: 57vw;
+  }
+
+  .geography-marker:nth-child(22) {
+    top: 22vw;
+    left: 61.5vw;
+  }
+
+  .geography-marker:nth-child(24) {
+    top: 33vw;
+    left: 93vw;
+  }
+
+  .geography-marker:nth-child(25) {
+    top: 27vw;
+    left: 89vw;
+  }
+
+  .geography-marker:nth-child(26) {
+    top: 44vw;
+    left: 85vw;
   }
 
   .geography-marker__item {
-    width: 2.6vw;
-    height: 2.6vw;
+    width: 2vw;
+    height: 2vw;
     div {
-      width: 2.3vw;
-      height: 2.3vw;
+      width: 1.6vw;
+      height: 1.6vw;
     }
   }
 }

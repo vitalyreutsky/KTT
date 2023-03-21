@@ -1,6 +1,6 @@
 .leaders {
   position: relative;
-  margin-bottom: 15vw;
+  margin-bottom: 11.2vw;
 }
 
 .leaders.main-shadow {
@@ -27,7 +27,7 @@
 }
 
 .leaders-title {
-  margin-bottom: 2.5vw;
+  margin-bottom: 2.7vw;
 }
 
 .leaders-items {
@@ -41,10 +41,10 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  gap: 1.563vw;
+  gap: 1.2vw;
   width: 3.3vw;
-  height: 35.5vw;
-  padding: 1.4vw 1.5vw;
+  height: 32vw;
+  padding: 2vw 1.45vw;
   background-color: var(--black-color);
   border-radius: 8px;
   transition: all 1200ms ease-out;
@@ -79,7 +79,7 @@
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 1.563vw;
+    gap: 1.5vw;
     position: absolute;
     bottom: 5vw;
     opacity: 0;
@@ -90,8 +90,8 @@
 
   &__text {
     font-weight: 300;
-    font-size: 1.302vw;
-    line-height: 1.979vw;
+    font-size: 1.1vw;
+    line-height: 1.7vw;
     color: #bababa;
   }
 
@@ -112,7 +112,7 @@
 }
 
 .leader-card.leader-card--active {
-  width: 28.125vw;
+  width: 25vw;
   align-items: flex-start;
 
   .leader-card__anim {
@@ -146,7 +146,7 @@
 
 @include tablet {
   .leaders {
-    margin-bottom: 10vw;
+    margin-bottom: 26vw;
   }
 
   .leaders.main-shadow {
@@ -156,7 +156,7 @@
   }
 
   .leaders-container {
-    padding-left: calc((100% - 92.7vw) / 2);
+    padding-left: calc((100% - 90vw) / 2);
   }
 
   .leaders-swiper {
@@ -165,7 +165,7 @@
 
   .leaders-content {
     flex-direction: column;
-    gap: 3.906vw;
+    gap: 3vw;
   }
 
   .leaders-title {
@@ -181,8 +181,8 @@
 
   .leader-card {
     gap: 3vw;
-    width: 5vw;
-    height: 68.125vw;
+    width: 6vw;
+    height: 69.5vw;
     padding: 3.5vw 3.5vw;
     border-radius: 8px;
     transition: all 1200ms ease-out;
@@ -198,7 +198,7 @@
     }
 
     &__content {
-      gap: 3vw;
+      gap: 3.8vw;
       bottom: 5vw;
       width: 50vw;
     }
@@ -216,12 +216,13 @@
     }
   }
   .leaders-images {
-    width: 100%;
-    height: 86.979vw;
+    width: 83vw;
+    height: 75vw;
+    right: -2vw;
   }
 
   .leader-card.leader-card--active {
-    width: 56.5vw;
+    width: 52.3vw;
   }
 
   .leaders-horizontal__anim {
@@ -231,7 +232,7 @@
 
 @include mobile {
   .leaders {
-    margin-bottom: 20vw;
+    margin-bottom: 24vw;
   }
 
   .leaders-container {
@@ -242,7 +243,7 @@
 
   .leaders-swiper {
     flex-direction: column;
-    gap: 8vw;
+    gap: 7vw;
   }
 
   .leaders-content {
@@ -251,7 +252,7 @@
   }
 
   .leaders-title {
-    margin-bottom: 11vw;
+    margin-bottom: 7vw;
     h2 {
       max-width: 33.203vw;
     }
@@ -264,8 +265,8 @@
 
   .leader-card {
     width: 100%;
-    gap: 3vw;
-    height: 118.4vw;
+    gap: 5vw;
+    height: 112.3vw;
     padding: 0;
     border-radius: 2.133vw;
 
@@ -289,7 +290,7 @@
 
     &__content {
       position: static;
-      gap: 3vw;
+      gap: 1vw;
       width: 100%;
       padding: 0 5.333vw;
       opacity: 1;
@@ -297,15 +298,15 @@
     }
 
     &__text {
-      font-size: 4.8vw;
-      line-height: 7.467vw;
+      font-size: 3.3vw;
+      line-height: 5vw;
       padding-bottom: 0;
     }
 
     &__num {
-      padding: 0 5.333vw 5.333vw;
+      padding: 0 5.333vw 4vw;
       color: var(--red-color);
-      font-size: 8vw;
+      font-size: 7vw;
       line-height: 9.333vw;
       opacity: 1;
     }
@@ -313,6 +314,7 @@
   .leaders-images {
     width: 100%;
     height: 86.979vw;
+    right: 0;
   }
 
   .leader-card.leader-card--active {

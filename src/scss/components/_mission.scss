@@ -46,7 +46,7 @@
 @include tablet {
   .mission {
     padding-top: 20vw;
-    margin-bottom: 10.417vw;
+    margin-bottom: 13.417vw;
 
     .hero-title {
       span {
@@ -68,7 +68,7 @@
 
   .mission-text {
     max-width: 100%;
-    margin-bottom: 6.51vw;
+    margin-bottom: 2vw;
   }
   .mission-img {
     height: 45.833vw;
@@ -82,7 +82,7 @@
 
 @include mobile {
   .mission {
-    padding-top: 25vw;
+    padding-top: 30vw;
     margin-bottom: 10.417vw;
 
     .main-scroll {
@@ -95,22 +95,21 @@
       top: 0;
       left: -73vw;
       width: 586.667vw;
-      height: 50vw;
-      margin-top: 10vw;
+      height: 41vw;
     }
   }
 
   .mission-container {
     .title-page {
-      margin-bottom: 8vw;
+      margin-bottom: 9vw;
     }
   }
 
   .mission-text {
-    margin-bottom: 6.667vw;
+    margin-bottom: 3.667vw;
   }
   .mission-img {
-    height: 93.867vw;
+    height: 91.867vw;
     margin-bottom: 6.51vw;
     border-radius: 2.667vw;
   }

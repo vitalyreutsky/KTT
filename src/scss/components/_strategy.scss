@@ -40,7 +40,7 @@
     justify-content: inherit;
     flex-direction: column;
     gap: 3.906vw;
-    margin-bottom: 6.51vw;
+    margin-bottom: 1.51vw;
     p {
       max-width: 100%;
     }
@@ -60,10 +60,14 @@
   }
   .strategy-text {
     gap: 5.333vw;
-    margin-bottom: 8vw;
+    margin-bottom: 7vw;
+    p {
+      line-height: 6.8vw;
+    }
   }
   .strategy-img {
-    height: 93.867vw;
+    height: 91.867vw;
     border-radius: 2.667vw;
+    margin: 0;
   }
 }

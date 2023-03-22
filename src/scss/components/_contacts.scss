@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   gap: 5.208vw;
-  padding-top: 2.688vw;
-  margin-bottom: 5.208vw;
+  padding-top: 4.5vw;
+  margin-bottom: 2vw;
 }
 
 .contacts-container {
@@ -160,7 +160,7 @@
   .contacts {
     gap: 9.115vw;
     padding-top: 20vw;
-    margin-bottom: 9.115vw;
+    margin-bottom: 20.115vw;
   }
 
   .contacts-container {
@@ -207,6 +207,30 @@
   .contacts-feedback {
     flex-direction: column;
     margin-bottom: 9.115vw;
+
+    .feedback {
+      padding-bottom: 0;
+      margin-bottom: 11vw;
+    }
+
+    .feedback-title {
+      font-size: 4.7vw;
+      margin-bottom: 4vw;
+    }
+
+    .feedback-text {
+      font-size: 2.76vw;
+      line-height: 3.6vw;
+      margin-bottom: 6.7vw;
+    }
+
+    .form {
+      gap: 3.7vw;
+    }
+
+    .form__input {
+      padding: 2vw 2.5vw 2vw 9vw;
+    }
 
     .custom-checkbox__content {
       display: flex;
@@ -256,12 +280,12 @@
 @include mobile {
   .contacts {
     gap: 9.115vw;
-    padding-top: 25vw;
+    padding-top: 31vw;
     margin-bottom: 13.333vw;
   }
 
   .contacts-container {
-    gap: 13.333vw;
+    gap: 16.333vw;
     width: 100%;
   }
 
@@ -273,7 +297,7 @@
     gap: 8vw;
   }
   .contacts-item {
-    gap: 2.667vw;
+    gap: 3.667vw;
 
     &__title {
       font-size: 6.933vw;
@@ -289,7 +313,7 @@
       }
       span {
         font-size: 4.8vw;
-        line-height: 6.933vw;
+        line-height: 7vw;
       }
     }
   }
@@ -307,18 +331,23 @@
 
     .feedback {
       padding: 0;
+      margin: 0;
     }
 
     .feedback-title {
       font-size: 6.933vw;
       line-height: 8vw;
-      margin-bottom: 5.333vw;
+      margin-bottom: 6.333vw;
     }
 
     .feedback-text {
-      font-size: 4.267vw;
-      line-height: 5.333vw;
-      margin-bottom: 8vw;
+      font-size: 4.7vw;
+      line-height: 6.333vw;
+      margin-bottom: 9vw;
+    }
+
+    .form {
+      gap: 4.7vw;
     }
 
     .form__label {
@@ -337,8 +366,15 @@
       padding: 3.5vw 2.5vw 3.5vw 17vw;
       border-radius: 1.333vw;
       &::placeholder {
+        transform: translateX(20vw);
         font-size: 4.267vw;
         line-height: 7.467vw;
+      }
+
+      &--mail {
+        &::placeholder {
+          transform: translateX(25vw);
+        }
       }
     }
 

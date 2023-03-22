@@ -12,6 +12,14 @@
     margin: 0;
   }
 
+  .news-cards {
+    gap: 1.042vw;
+  }
+
+  .news-column {
+    width: 100%;
+  }
+
   .pagination {
     display: block;
     padding-top: 2.604vw;
@@ -20,11 +28,15 @@
 
 @include tablet {
   .press-center {
-    padding-top: 20vw;
+    padding-top: 19vw;
     margin-bottom: 9.115vw;
 
     &__container {
-      gap: 4.688vw;
+      gap: 8.688vw;
+    }
+
+    .news-cards {
+      gap: 4.042vw;
     }
 
     .news-column:nth-child(n + 2) {
@@ -39,11 +51,15 @@
 
 @include mobile {
   .press-center {
-    padding-top: 25vw;
+    padding-top: 29.5vw;
     margin-bottom: 18.667vw;
 
     &__container {
-      gap: 4vw;
+      gap: 11vw;
+    }
+
+    .news-cards {
+      gap: 9.042vw;
     }
 
     .pagination {

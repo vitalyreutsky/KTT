@@ -170,14 +170,13 @@ p {
 }
 
 .pipe {
-  display: none;
   position: absolute;
-  top: 35vw;
-  right: 13.7vw;
-  width: 76%;
+  top: -2vw;
+  right: 3.6vw;
+  width: 91%;
   height: 100%;
   stroke-width: 3vw;
-  z-index: -1;
+  z-index: 1;
 
   @include tablet {
     display: none;
@@ -189,9 +188,9 @@ p {
   @include tablet {
     display: block;
     position: absolute;
-    width: 83.5%;
+    width: 83%;
     height: 100%;
-    top: -34vw;
+    top: -24vw;
     right: 13.8vw;
     stroke-width: 3vw;
     z-index: -1;

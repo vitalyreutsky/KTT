@@ -6,7 +6,6 @@
 .work-container {
   display: flex;
   flex-direction: column;
-  gap: 3.646vw;
 }
 
 .work-top {
@@ -44,8 +43,8 @@
   }
 }
 .work-images {
-  top: 5vw;
-  right: 3vw;
+  top: 3vw;
+  right: 5vw;
   width: 42.656vw;
   height: 34.375vw;
   transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -102,6 +101,7 @@
 //count
 .count {
   position: relative;
+  margin-bottom: 4vw;
   display: flex;
   flex-direction: column;
   gap: 2vw;
@@ -150,6 +150,10 @@
 }
 
 .export {
+  .work-container {
+    gap: 3.9vw;
+  }
+
   .work-images {
     width: 46.563vw;
     height: 27.604vw;
@@ -172,25 +176,36 @@
     height: 40vw;
     transform: rotate(0);
   }
+
+  .work-anim__horizontal {
+    margin-top: 2vw;
+    margin-bottom: 6vw;
+  }
 }
 
 .transshipment-oil {
   .work-images {
-    top: 0;
     right: -10vw;
     transform: matrix(1, 0, 0, 1, 0, 0);
   }
 
   .work-anim {
-    top: -5vw;
+    top: -7vw;
     right: 10vw;
     transform: rotate(0);
+  }
+
+  .work-anim__horizontal {
+    margin: 0vw 0 9vw;
   }
 }
 
 .transshipment-bitumen {
+  .work-container {
+    gap: 4vw;
+  }
   .work-images {
-    right: -8vw;
+    right: -11vw;
     top: 3vw;
     transform: matrix(1, 0, 0, 1, 0, 0);
     img {
@@ -200,9 +215,13 @@
   }
 
   .work-anim {
-    top: -10vw;
+    top: -6vw;
     right: 7vw;
     transform: rotate(0);
+  }
+
+  .work-anim__horizontal {
+    margin: 0vw 0 8vw;
   }
 }
 
@@ -250,6 +269,10 @@
 }
 
 .bunkering {
+  .work-text {
+    margin-bottom: 5vw;
+  }
+
   .work-images {
     top: 0;
     right: -5vw;
@@ -260,14 +283,18 @@
   }
 
   .work-anim {
-    top: -5vw;
+    top: -3vw;
     right: 0;
+  }
+
+  .work-anim__horizontal {
+    margin: 0vw 0 8vw;
   }
 }
 
 @include tablet {
   .work {
-    padding-top: 14vw;
+    padding-top: 12.5vw;
     margin-bottom: 6.25vw;
   }
   .work-container {
@@ -290,7 +317,7 @@
   .work-title {
     font-size: 4.688vw;
     line-height: 6.51vw;
-    margin-bottom: 3.906vw;
+    margin-bottom: 4.906vw;
   }
   .work-text {
     gap: 1.953vw;
@@ -308,14 +335,14 @@
   }
 
   .work-anim__horizontal {
-    margin: 9.115vw 0;
+    margin: 10.115vw 0;
     height: auto;
     width: 200vw;
   }
 
   .work-documents {
     flex-direction: column;
-    gap: 2.604vw;
+    gap: 5.604vw;
   }
 
   .work-documents__title {
@@ -334,8 +361,8 @@
 
   //count
   .count {
-    gap: 4.818vw;
-    margin-bottom: 9.115vw;
+    gap: 6.818vw;
+    margin-bottom: 4.115vw;
   }
   .count-title {
     font-size: 4.688vw;
@@ -371,7 +398,7 @@
 
   .supply {
     .work-top {
-      gap: 15vw;
+      gap: 11vw;
     }
 
     .work-anim {
@@ -394,6 +421,10 @@
   .export {
     .work-top {
       gap: 20vw;
+    }
+
+    .work-container {
+      gap: 0;
     }
 
     .work-images {
@@ -425,7 +456,8 @@
       margin-bottom: 10vw;
     }
     .work-images {
-      right: 0;
+      top: -7vw;
+      right: -12vw;
       width: 64.453vw;
       height: 64.974vw;
       img {
@@ -440,6 +472,10 @@
       width: 96.094vw;
       height: 77.474vw;
     }
+
+    .work-anim__horizontal {
+      margin: 1vw 0 3vw;
+    }
   }
 
   .transshipment-bitumen {
@@ -448,7 +484,7 @@
       margin-bottom: 10vw;
     }
     .work-images {
-      top: 0;
+      top: -4vw;
       right: -22vw;
       width: 96.224vw;
       height: 60.547vw;
@@ -463,6 +499,10 @@
       right: 20vw;
       width: 96.094vw;
       height: 77.474vw;
+    }
+
+    .work-anim__horizontal {
+      margin: 1vw 0 2vw;
     }
   }
 
@@ -496,11 +536,11 @@
   .bunkering {
     .work-top {
       gap: 20vw;
-      margin-bottom: 10vw;
+      margin-bottom: 16vw;
     }
 
     .work-images {
-      top: -4vw;
+      top: -12vw;
       right: -10vw;
       width: 87.37vw;
       height: 58.724vw;
@@ -516,12 +556,16 @@
       width: 96.094vw;
       height: 77.474vw;
     }
+
+    .work-anim__horizontal {
+      margin: 1vw 0 2vw;
+    }
   }
 }
 
 @include mobile {
   .work {
-    padding-top: 25vw;
+    padding-top: 24vw;
     margin-bottom: 18.667vw;
   }
 
@@ -532,14 +576,14 @@
 
   .work-title {
     font-size: 6.933vw;
-    line-height: 9vw;
-    margin-bottom: 5.333vw;
+    line-height: 10.5vw;
+    margin-bottom: 6.333vw;
   }
   .work-text {
     gap: 4vw;
     margin-bottom: 6.667vw;
     p {
-      font-size: 4.8vw;
+      font-size: 4.7vw;
       line-height: 6.933vw;
     }
   }
@@ -554,12 +598,14 @@
   }
 
   .work-documents__inner {
-    gap: 4vw;
+    gap: 5vw;
     flex-direction: column;
     .btn {
       text-align: inherit;
       font-size: 3.1vw;
       line-height: 3.867vw;
+      padding-top: 4vw;
+      padding-bottom: 4vw;
       &:first-child {
         padding-left: 7vw;
       }
@@ -568,8 +614,8 @@
 
   //count
   .count {
-    gap: 6.667vw;
-    margin-bottom: 12vw;
+    gap: 9.667vw;
+    margin-bottom: 11vw;
   }
   .count-title {
     font-size: 6.933vw;
@@ -577,7 +623,7 @@
   }
   .count-items {
     grid-template-columns: repeat(1, 1fr);
-    gap: 15vw;
+    gap: 12vw;
   }
   .count-item {
     gap: 9vw;
@@ -605,14 +651,14 @@
   .work-anim__horizontal {
     left: -73vw;
     width: 400vw;
-    height: 50vw;
+    height: 42vw;
     margin-top: 10vw;
   }
 
   .supply {
     .work-top {
       gap: 20vw;
-      margin-bottom: 20vw;
+      margin-bottom: 22vw;
     }
 
     .work-anim {
@@ -660,11 +706,11 @@
   .transshipment-oil {
     .work-top {
       gap: 25vw;
-      margin-bottom: 20vw;
+      margin-bottom: 35vw;
     }
     .work-images {
-      top: 0;
-      right: -7vw;
+      top: 7vw;
+      right: -11vw;
       width: 75.467vw;
       height: 75.467vw;
       img {
@@ -679,12 +725,20 @@
       width: 153.094vw;
       height: 95vw;
     }
+
+    .work-anim__horizontal {
+      margin: 0vw 0 16vw;
+    }
   }
 
   .transshipment-bitumen {
+    .work-title {
+      margin-bottom: 8.333vw;
+    }
+
     .work-top {
       gap: 25vw;
-      margin-bottom: 15vw;
+      margin-bottom: 25vw;
     }
     .work-images {
       top: 0;
@@ -698,6 +752,10 @@
       right: 13vw;
       width: 153.094vw;
       height: 95vw;
+    }
+
+    .work-anim__horizontal {
+      margin: 0vw 0 16vw;
     }
   }
 
@@ -727,16 +785,24 @@
   }
 
   .bunkering {
+    .work-title {
+      margin-bottom: 8.333vw;
+    }
+
+    .work-text {
+      margin-bottom: 11vw;
+    }
+
     .work-top {
       gap: 20vw;
-      margin-bottom: 10vw;
+      margin-bottom: 45vw;
     }
 
     .work-images {
-      top: -4vw;
-      right: -10vw;
-      width: 87.37vw;
-      height: 58.724vw;
+      top: 5vw;
+      right: -17vw;
+      width: 110.37vw;
+      height: 64.724vw;
       img {
         width: 100%;
         height: 100%;
@@ -748,6 +814,10 @@
       right: -12vw;
       width: 96.094vw;
       height: 77.474vw;
+    }
+
+    .work-anim__horizontal {
+      margin: 0vw 0 16vw;
     }
   }
 }

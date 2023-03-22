@@ -13,15 +13,6 @@
   left: -1vw;
   width: 40vw;
   height: 29.688vw;
-  &:hover {
-    .geography-img--off {
-      transform: translateX(2vw) scale(1.2);
-    }
-
-    .geography-img--on {
-      transform: translateX(2vw) scale(1.2);
-    }
-  }
 }
 .geography-map {
   position: relative;

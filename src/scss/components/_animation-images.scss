@@ -16,6 +16,16 @@
   }
 }
 
+.animation-img-off--active {
+  transform: scale(1.2);
+}
+
+.animation-img-on--active {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: scale(1.2);
+}
+
 .animation-img--off {
   position: absolute;
   top: 0;

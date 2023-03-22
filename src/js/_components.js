@@ -11,3 +11,4 @@ import "./components/tabs";
 import "./components/count";
 import "./components/modal";
 import "./components/search";
+import "./components/observer";

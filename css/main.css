@@ -862,6 +862,7 @@ p {
 .pagination {
   display: none;
 }
+
 .pagination-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -890,7 +891,7 @@ p {
 
 @media only screen and (max-width: 1200px) {
   .pagination {
-    display: block;
+    /* display: block; */
   }
   .pagination-list {
     -webkit-box-pack: justify;
